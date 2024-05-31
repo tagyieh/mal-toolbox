@@ -1,9 +1,6 @@
 import cProfile
-import inspect
 import pstats
 import yaml
-import time
-import pprint
 
 HISTORY_FILE = "profiling_results.yml"
 COMPARE_FILE = "profiling_compare.yml"
