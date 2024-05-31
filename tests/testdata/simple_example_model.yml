@@ -1,0 +1,177 @@
+assets:
+  0:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: OS App
+  1:
+    defenses:
+      notPresent: 1.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Program 1
+  2:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Program 1:2
+  3:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: IDPS
+    name: IDPS 1
+  4:
+    defenses:
+      availabilityImpactLimitations: 1.0
+      confidentialityImpactLimitations: 0.0
+      highComplexityExploitRequired: 0.0
+      highPrivilegesRequired: 0.0
+      integrityImpactLimitations: 0.0
+      localAccessRequired: 0.0
+      lowPrivilegesRequired: 1.0
+      networkAccessRequired: 0.0
+      notPresent: 0.0
+      physicalAccessRequired: 0.0
+      userInteractionRequired: 0.0
+    metaconcept: SoftwareVulnerability
+    name: SoftwareVulnerability:4
+  5:
+    defenses:
+      notPresent: 0.0
+    metaconcept: Data
+    name: Data:5
+  6:
+    defenses:
+      notPhishable: 0.0
+      unique: 0.0
+    metaconcept: Credentials
+    name: Credentials:6
+  7:
+    defenses:
+      notPhishable: 0.0
+      unique: 0.0
+    metaconcept: Credentials
+    name: Credentials:7
+  8:
+    defenses:
+      notPresent: 0.0
+    metaconcept: Identity
+    name: Identity:8
+  9:
+    defenses:
+      notPhishable: 0.0
+      unique: 0.0
+    metaconcept: Credentials
+    name: Credentials:9
+  10:
+    defenses:
+      notPhishable: 0.0
+    metaconcept: Credentials
+    name: Credentials:10
+  11:
+    defenses:
+      notPresent: 0.0
+    metaconcept: Identity
+    name: Identity:11
+  12:
+    defenses:
+      noPasswordReuse: 0.0
+      securityAwareness: 0.0
+    metaconcept: User
+    name: User:12
+  13:
+    defenses:
+      notPresent: 0.0
+    metaconcept: Group
+    name: Group:13
+associations:
+- association:
+    appExecutedApps:
+    - 1
+    - 2
+    - 3
+    hostApp:
+    - 0
+  metaconcept: AppExecution
+- association:
+    application:
+    - 2
+    vulnerabilities:
+    - 4
+  metaconcept: ApplicationVulnerability_SoftwareVulnerability_Application
+- association:
+    containedData:
+    - 5
+    containingApp:
+    - 2
+  metaconcept: AppContainment
+- association:
+    encryptCreds:
+    - 6
+    encryptedData:
+    - 5
+  metaconcept: EncryptionCredentials
+- association:
+    credentials:
+    - 6
+    requiredFactors:
+    - 7
+  metaconcept: ConditionalAuthentication
+- association:
+    credentials:
+    - 6
+    identities:
+    - 8
+  metaconcept: IdentityCredentials
+- association:
+    credentials:
+    - 9
+    - 10
+    identities:
+    - 11
+  metaconcept: IdentityCredentials
+- association:
+    userIds:
+    - 8
+    - 11
+    users:
+    - 12
+  metaconcept: UserAssignedIdentities
+- association:
+    dependentApps:
+    - 3
+    infoDependedUpon:
+    - 13
+  metaconcept: Dependence_Information_Application
+attackers:
+  14:
+    entry_points:
+      0:
+        attack_steps:
+        - softwareProductAbuse
+      6:
+        attack_steps:
+        - attemptCredentialsReuse
+      7:
+        attack_steps:
+        - attemptCredentialsReuse
+        - guessCredentials
+      9:
+        attack_steps:
+        - attemptCredentialsReuse
+    name: Attacker:14
+  15:
+    entry_points:
+      0:
+        attack_steps:
+        - fullAccess
+    name: Attacker:15
+metadata:
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.coreLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: Simple Example Model

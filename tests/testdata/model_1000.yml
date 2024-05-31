@@ -1,0 +1,6009 @@
+assets:
+  0:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 0
+  1:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 1
+  2:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 2
+  3:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 3
+  4:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 4
+  5:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 5
+  6:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 6
+  7:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 7
+  8:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 8
+  9:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 9
+  10:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 10
+  11:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 11
+  12:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 12
+  13:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 13
+  14:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 14
+  15:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 15
+  16:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 16
+  17:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 17
+  18:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 18
+  19:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 19
+  20:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 20
+  21:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 21
+  22:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 22
+  23:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 23
+  24:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 24
+  25:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 25
+  26:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 26
+  27:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 27
+  28:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 28
+  29:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 29
+  30:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 30
+  31:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 31
+  32:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 32
+  33:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 33
+  34:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 34
+  35:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 35
+  36:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 36
+  37:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 37
+  38:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 38
+  39:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 39
+  40:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 40
+  41:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 41
+  42:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 42
+  43:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 43
+  44:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 44
+  45:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 45
+  46:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 46
+  47:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 47
+  48:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 48
+  49:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 49
+  50:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 50
+  51:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 51
+  52:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 52
+  53:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 53
+  54:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 54
+  55:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 55
+  56:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 56
+  57:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 57
+  58:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 58
+  59:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 59
+  60:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 60
+  61:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 61
+  62:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 62
+  63:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 63
+  64:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 64
+  65:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 65
+  66:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 66
+  67:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 67
+  68:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 68
+  69:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 69
+  70:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 70
+  71:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 71
+  72:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 72
+  73:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 73
+  74:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 74
+  75:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 75
+  76:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 76
+  77:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 77
+  78:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 78
+  79:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 79
+  80:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 80
+  81:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 81
+  82:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 82
+  83:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 83
+  84:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 84
+  85:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 85
+  86:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 86
+  87:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 87
+  88:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 88
+  89:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 89
+  90:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 90
+  91:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 91
+  92:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 92
+  93:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 93
+  94:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 94
+  95:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 95
+  96:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 96
+  97:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 97
+  98:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 98
+  99:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 99
+  100:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 100
+  101:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 101
+  102:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 102
+  103:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 103
+  104:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 104
+  105:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 105
+  106:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 106
+  107:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 107
+  108:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 108
+  109:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 109
+  110:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 110
+  111:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 111
+  112:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 112
+  113:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 113
+  114:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 114
+  115:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 115
+  116:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 116
+  117:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 117
+  118:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 118
+  119:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 119
+  120:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 120
+  121:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 121
+  122:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 122
+  123:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 123
+  124:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 124
+  125:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 125
+  126:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 126
+  127:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 127
+  128:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 128
+  129:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 129
+  130:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 130
+  131:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 131
+  132:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 132
+  133:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 133
+  134:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 134
+  135:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 135
+  136:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 136
+  137:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 137
+  138:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 138
+  139:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 139
+  140:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 140
+  141:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 141
+  142:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 142
+  143:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 143
+  144:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 144
+  145:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 145
+  146:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 146
+  147:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 147
+  148:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 148
+  149:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 149
+  150:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 150
+  151:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 151
+  152:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 152
+  153:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 153
+  154:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 154
+  155:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 155
+  156:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 156
+  157:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 157
+  158:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 158
+  159:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 159
+  160:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 160
+  161:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 161
+  162:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 162
+  163:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 163
+  164:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 164
+  165:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 165
+  166:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 166
+  167:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 167
+  168:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 168
+  169:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 169
+  170:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 170
+  171:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 171
+  172:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 172
+  173:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 173
+  174:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 174
+  175:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 175
+  176:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 176
+  177:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 177
+  178:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 178
+  179:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 179
+  180:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 180
+  181:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 181
+  182:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 182
+  183:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 183
+  184:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 184
+  185:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 185
+  186:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 186
+  187:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 187
+  188:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 188
+  189:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 189
+  190:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 190
+  191:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 191
+  192:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 192
+  193:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 193
+  194:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 194
+  195:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 195
+  196:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 196
+  197:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 197
+  198:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 198
+  199:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 199
+  200:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 200
+  201:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 201
+  202:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 202
+  203:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 203
+  204:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 204
+  205:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 205
+  206:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 206
+  207:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 207
+  208:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 208
+  209:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 209
+  210:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 210
+  211:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 211
+  212:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 212
+  213:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 213
+  214:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 214
+  215:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 215
+  216:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 216
+  217:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 217
+  218:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 218
+  219:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 219
+  220:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 220
+  221:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 221
+  222:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 222
+  223:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 223
+  224:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 224
+  225:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 225
+  226:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 226
+  227:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 227
+  228:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 228
+  229:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 229
+  230:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 230
+  231:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 231
+  232:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 232
+  233:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 233
+  234:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 234
+  235:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 235
+  236:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 236
+  237:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 237
+  238:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 238
+  239:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 239
+  240:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 240
+  241:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 241
+  242:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 242
+  243:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 243
+  244:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 244
+  245:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 245
+  246:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 246
+  247:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 247
+  248:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 248
+  249:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 249
+  250:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 250
+  251:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 251
+  252:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 252
+  253:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 253
+  254:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 254
+  255:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 255
+  256:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 256
+  257:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 257
+  258:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 258
+  259:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 259
+  260:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 260
+  261:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 261
+  262:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 262
+  263:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 263
+  264:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 264
+  265:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 265
+  266:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 266
+  267:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 267
+  268:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 268
+  269:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 269
+  270:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 270
+  271:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 271
+  272:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 272
+  273:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 273
+  274:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 274
+  275:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 275
+  276:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 276
+  277:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 277
+  278:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 278
+  279:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 279
+  280:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 280
+  281:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 281
+  282:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 282
+  283:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 283
+  284:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 284
+  285:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 285
+  286:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 286
+  287:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 287
+  288:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 288
+  289:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 289
+  290:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 290
+  291:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 291
+  292:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 292
+  293:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 293
+  294:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 294
+  295:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 295
+  296:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 296
+  297:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 297
+  298:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 298
+  299:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 299
+  300:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 300
+  301:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 301
+  302:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 302
+  303:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 303
+  304:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 304
+  305:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 305
+  306:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 306
+  307:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 307
+  308:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 308
+  309:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 309
+  310:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 310
+  311:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 311
+  312:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 312
+  313:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 313
+  314:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 314
+  315:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 315
+  316:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 316
+  317:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 317
+  318:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 318
+  319:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 319
+  320:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 320
+  321:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 321
+  322:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 322
+  323:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 323
+  324:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 324
+  325:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 325
+  326:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 326
+  327:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 327
+  328:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 328
+  329:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 329
+  330:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 330
+  331:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 331
+  332:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 332
+  333:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 333
+  334:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 334
+  335:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 335
+  336:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 336
+  337:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 337
+  338:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 338
+  339:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 339
+  340:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 340
+  341:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 341
+  342:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 342
+  343:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 343
+  344:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 344
+  345:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 345
+  346:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 346
+  347:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 347
+  348:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 348
+  349:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 349
+  350:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 350
+  351:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 351
+  352:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 352
+  353:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 353
+  354:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 354
+  355:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 355
+  356:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 356
+  357:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 357
+  358:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 358
+  359:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 359
+  360:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 360
+  361:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 361
+  362:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 362
+  363:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 363
+  364:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 364
+  365:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 365
+  366:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 366
+  367:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 367
+  368:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 368
+  369:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 369
+  370:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 370
+  371:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 371
+  372:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 372
+  373:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 373
+  374:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 374
+  375:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 375
+  376:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 376
+  377:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 377
+  378:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 378
+  379:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 379
+  380:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 380
+  381:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 381
+  382:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 382
+  383:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 383
+  384:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 384
+  385:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 385
+  386:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 386
+  387:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 387
+  388:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 388
+  389:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 389
+  390:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 390
+  391:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 391
+  392:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 392
+  393:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 393
+  394:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 394
+  395:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 395
+  396:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 396
+  397:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 397
+  398:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 398
+  399:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 399
+  400:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 400
+  401:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 401
+  402:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 402
+  403:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 403
+  404:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 404
+  405:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 405
+  406:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 406
+  407:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 407
+  408:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 408
+  409:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 409
+  410:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 410
+  411:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 411
+  412:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 412
+  413:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 413
+  414:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 414
+  415:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 415
+  416:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 416
+  417:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 417
+  418:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 418
+  419:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 419
+  420:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 420
+  421:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 421
+  422:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 422
+  423:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 423
+  424:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 424
+  425:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 425
+  426:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 426
+  427:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 427
+  428:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 428
+  429:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 429
+  430:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 430
+  431:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 431
+  432:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 432
+  433:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 433
+  434:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 434
+  435:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 435
+  436:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 436
+  437:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 437
+  438:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 438
+  439:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 439
+  440:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 440
+  441:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 441
+  442:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 442
+  443:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 443
+  444:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 444
+  445:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 445
+  446:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 446
+  447:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 447
+  448:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 448
+  449:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 449
+  450:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 450
+  451:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 451
+  452:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 452
+  453:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 453
+  454:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 454
+  455:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 455
+  456:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 456
+  457:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 457
+  458:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 458
+  459:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 459
+  460:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 460
+  461:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 461
+  462:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 462
+  463:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 463
+  464:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 464
+  465:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 465
+  466:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 466
+  467:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 467
+  468:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 468
+  469:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 469
+  470:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 470
+  471:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 471
+  472:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 472
+  473:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 473
+  474:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 474
+  475:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 475
+  476:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 476
+  477:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 477
+  478:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 478
+  479:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 479
+  480:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 480
+  481:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 481
+  482:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 482
+  483:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 483
+  484:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 484
+  485:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 485
+  486:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 486
+  487:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 487
+  488:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 488
+  489:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 489
+  490:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 490
+  491:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 491
+  492:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 492
+  493:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 493
+  494:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 494
+  495:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 495
+  496:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 496
+  497:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 497
+  498:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 498
+  499:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 499
+  500:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 500
+  501:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 501
+  502:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 502
+  503:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 503
+  504:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 504
+  505:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 505
+  506:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 506
+  507:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 507
+  508:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 508
+  509:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 509
+  510:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 510
+  511:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 511
+  512:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 512
+  513:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 513
+  514:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 514
+  515:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 515
+  516:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 516
+  517:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 517
+  518:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 518
+  519:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 519
+  520:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 520
+  521:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 521
+  522:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 522
+  523:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 523
+  524:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 524
+  525:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 525
+  526:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 526
+  527:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 527
+  528:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 528
+  529:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 529
+  530:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 530
+  531:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 531
+  532:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 532
+  533:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 533
+  534:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 534
+  535:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 535
+  536:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 536
+  537:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 537
+  538:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 538
+  539:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 539
+  540:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 540
+  541:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 541
+  542:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 542
+  543:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 543
+  544:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 544
+  545:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 545
+  546:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 546
+  547:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 547
+  548:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 548
+  549:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 549
+  550:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 550
+  551:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 551
+  552:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 552
+  553:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 553
+  554:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 554
+  555:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 555
+  556:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 556
+  557:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 557
+  558:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 558
+  559:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 559
+  560:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 560
+  561:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 561
+  562:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 562
+  563:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 563
+  564:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 564
+  565:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 565
+  566:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 566
+  567:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 567
+  568:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 568
+  569:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 569
+  570:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 570
+  571:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 571
+  572:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 572
+  573:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 573
+  574:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 574
+  575:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 575
+  576:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 576
+  577:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 577
+  578:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 578
+  579:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 579
+  580:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 580
+  581:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 581
+  582:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 582
+  583:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 583
+  584:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 584
+  585:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 585
+  586:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 586
+  587:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 587
+  588:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 588
+  589:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 589
+  590:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 590
+  591:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 591
+  592:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 592
+  593:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 593
+  594:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 594
+  595:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 595
+  596:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 596
+  597:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 597
+  598:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 598
+  599:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 599
+  600:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 600
+  601:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 601
+  602:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 602
+  603:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 603
+  604:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 604
+  605:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 605
+  606:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 606
+  607:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 607
+  608:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 608
+  609:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 609
+  610:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 610
+  611:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 611
+  612:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 612
+  613:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 613
+  614:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 614
+  615:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 615
+  616:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 616
+  617:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 617
+  618:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 618
+  619:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 619
+  620:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 620
+  621:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 621
+  622:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 622
+  623:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 623
+  624:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 624
+  625:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 625
+  626:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 626
+  627:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 627
+  628:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 628
+  629:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 629
+  630:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 630
+  631:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 631
+  632:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 632
+  633:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 633
+  634:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 634
+  635:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 635
+  636:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 636
+  637:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 637
+  638:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 638
+  639:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 639
+  640:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 640
+  641:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 641
+  642:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 642
+  643:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 643
+  644:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 644
+  645:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 645
+  646:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 646
+  647:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 647
+  648:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 648
+  649:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 649
+  650:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 650
+  651:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 651
+  652:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 652
+  653:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 653
+  654:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 654
+  655:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 655
+  656:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 656
+  657:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 657
+  658:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 658
+  659:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 659
+  660:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 660
+  661:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 661
+  662:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 662
+  663:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 663
+  664:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 664
+  665:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 665
+  666:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 666
+  667:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 667
+  668:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 668
+  669:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 669
+  670:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 670
+  671:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 671
+  672:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 672
+  673:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 673
+  674:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 674
+  675:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 675
+  676:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 676
+  677:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 677
+  678:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 678
+  679:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 679
+  680:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 680
+  681:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 681
+  682:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 682
+  683:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 683
+  684:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 684
+  685:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 685
+  686:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 686
+  687:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 687
+  688:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 688
+  689:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 689
+  690:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 690
+  691:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 691
+  692:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 692
+  693:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 693
+  694:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 694
+  695:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 695
+  696:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 696
+  697:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 697
+  698:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 698
+  699:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 699
+  700:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 700
+  701:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 701
+  702:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 702
+  703:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 703
+  704:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 704
+  705:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 705
+  706:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 706
+  707:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 707
+  708:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 708
+  709:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 709
+  710:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 710
+  711:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 711
+  712:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 712
+  713:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 713
+  714:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 714
+  715:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 715
+  716:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 716
+  717:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 717
+  718:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 718
+  719:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 719
+  720:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 720
+  721:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 721
+  722:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 722
+  723:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 723
+  724:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 724
+  725:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 725
+  726:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 726
+  727:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 727
+  728:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 728
+  729:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 729
+  730:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 730
+  731:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 731
+  732:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 732
+  733:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 733
+  734:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 734
+  735:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 735
+  736:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 736
+  737:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 737
+  738:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 738
+  739:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 739
+  740:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 740
+  741:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 741
+  742:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 742
+  743:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 743
+  744:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 744
+  745:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 745
+  746:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 746
+  747:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 747
+  748:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 748
+  749:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 749
+  750:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 750
+  751:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 751
+  752:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 752
+  753:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 753
+  754:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 754
+  755:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 755
+  756:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 756
+  757:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 757
+  758:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 758
+  759:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 759
+  760:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 760
+  761:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 761
+  762:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 762
+  763:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 763
+  764:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 764
+  765:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 765
+  766:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 766
+  767:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 767
+  768:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 768
+  769:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 769
+  770:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 770
+  771:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 771
+  772:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 772
+  773:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 773
+  774:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 774
+  775:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 775
+  776:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 776
+  777:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 777
+  778:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 778
+  779:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 779
+  780:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 780
+  781:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 781
+  782:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 782
+  783:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 783
+  784:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 784
+  785:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 785
+  786:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 786
+  787:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 787
+  788:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 788
+  789:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 789
+  790:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 790
+  791:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 791
+  792:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 792
+  793:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 793
+  794:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 794
+  795:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 795
+  796:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 796
+  797:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 797
+  798:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 798
+  799:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 799
+  800:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 800
+  801:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 801
+  802:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 802
+  803:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 803
+  804:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 804
+  805:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 805
+  806:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 806
+  807:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 807
+  808:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 808
+  809:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 809
+  810:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 810
+  811:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 811
+  812:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 812
+  813:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 813
+  814:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 814
+  815:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 815
+  816:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 816
+  817:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 817
+  818:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 818
+  819:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 819
+  820:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 820
+  821:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 821
+  822:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 822
+  823:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 823
+  824:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 824
+  825:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 825
+  826:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 826
+  827:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 827
+  828:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 828
+  829:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 829
+  830:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 830
+  831:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 831
+  832:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 832
+  833:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 833
+  834:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 834
+  835:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 835
+  836:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 836
+  837:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 837
+  838:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 838
+  839:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 839
+  840:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 840
+  841:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 841
+  842:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 842
+  843:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 843
+  844:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 844
+  845:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 845
+  846:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 846
+  847:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 847
+  848:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 848
+  849:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 849
+  850:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 850
+  851:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 851
+  852:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 852
+  853:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 853
+  854:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 854
+  855:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 855
+  856:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 856
+  857:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 857
+  858:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 858
+  859:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 859
+  860:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 860
+  861:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 861
+  862:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 862
+  863:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 863
+  864:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 864
+  865:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 865
+  866:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 866
+  867:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 867
+  868:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 868
+  869:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 869
+  870:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 870
+  871:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 871
+  872:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 872
+  873:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 873
+  874:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 874
+  875:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 875
+  876:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 876
+  877:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 877
+  878:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 878
+  879:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 879
+  880:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 880
+  881:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 881
+  882:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 882
+  883:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 883
+  884:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 884
+  885:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 885
+  886:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 886
+  887:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 887
+  888:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 888
+  889:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 889
+  890:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 890
+  891:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 891
+  892:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 892
+  893:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 893
+  894:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 894
+  895:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 895
+  896:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 896
+  897:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 897
+  898:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 898
+  899:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 899
+  900:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 900
+  901:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 901
+  902:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 902
+  903:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 903
+  904:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 904
+  905:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 905
+  906:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 906
+  907:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 907
+  908:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 908
+  909:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 909
+  910:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 910
+  911:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 911
+  912:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 912
+  913:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 913
+  914:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 914
+  915:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 915
+  916:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 916
+  917:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 917
+  918:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 918
+  919:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 919
+  920:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 920
+  921:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 921
+  922:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 922
+  923:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 923
+  924:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 924
+  925:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 925
+  926:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 926
+  927:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 927
+  928:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 928
+  929:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 929
+  930:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 930
+  931:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 931
+  932:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 932
+  933:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 933
+  934:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 934
+  935:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 935
+  936:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 936
+  937:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 937
+  938:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 938
+  939:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 939
+  940:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 940
+  941:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 941
+  942:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 942
+  943:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 943
+  944:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 944
+  945:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 945
+  946:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 946
+  947:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 947
+  948:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 948
+  949:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 949
+  950:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 950
+  951:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 951
+  952:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 952
+  953:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 953
+  954:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 954
+  955:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 955
+  956:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 956
+  957:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 957
+  958:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 958
+  959:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 959
+  960:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 960
+  961:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 961
+  962:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 962
+  963:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 963
+  964:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 964
+  965:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 965
+  966:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 966
+  967:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 967
+  968:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 968
+  969:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 969
+  970:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 970
+  971:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 971
+  972:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 972
+  973:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 973
+  974:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 974
+  975:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 975
+  976:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 976
+  977:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 977
+  978:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 978
+  979:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 979
+  980:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 980
+  981:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 981
+  982:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 982
+  983:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 983
+  984:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 984
+  985:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 985
+  986:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 986
+  987:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 987
+  988:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 988
+  989:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 989
+  990:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 990
+  991:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 991
+  992:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 992
+  993:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 993
+  994:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 994
+  995:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 995
+  996:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 996
+  997:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 997
+  998:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 998
+  999:
+    defenses:
+      notPresent: 0.0
+      supplyChainAuditing: 0.0
+    metaconcept: Application
+    name: Application 999
+associations: []
+attackers: {}
+metadata:
+  info: Created by the mal-toolbox model python module.
+  langID: org.mal-lang.coreLang
+  langVersion: 1.0.0
+  malVersion: 0.1.0-SNAPSHOT
+  name: Test Model
