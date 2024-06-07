@@ -31,33 +31,34 @@ def generate_model(lang_classes_factory, n_assets):
 class ProfileMALToolbox(PyProfiler):
     """Profiling for MAL Toolbox using PyProfiler"""
 
-    # def profile_attackgraph_init(self):
-    #     """AttackGraph()"""
-    #     file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
-    #     language_graph = LanguageGraph.from_mar_archive(file_path)
-    #     lang_classes_factory = LanguageClassesFactory(language_graph)
-    #     model = generate_model(lang_classes_factory, 5)
-    #     self.pyprofile(AttackGraph, language_graph, model, num_repeated=10)
+    def profile_attackgraph_init(self):
+        """AttackGraph()"""
+        file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
+        language_graph = LanguageGraph.from_mar_archive(file_path)
+        lang_classes_factory = LanguageClassesFactory(language_graph)
+        model = generate_model(lang_classes_factory, 5)
+        self.pyprofile(AttackGraph, language_graph, model, num_repeated=10)
 
-    # def profile_create_attack_graph_wrapper(self):
-    #     """Profile the create_attack_graph wrapper"""
-    #     lang_file = path_testdata('org.mal-lang.coreLang-1.0.0.mar')
-    #     model_file = path_testdata("simple_example_model.yml")
-    #     self.pyprofile(
-    #         create_attack_graph, lang_file, model_file, num_repeated=10
-    #     )
+    def profile_create_attack_graph_wrapper(self):
+        """Profile the create_attack_graph wrapper"""
+        lang_file = path_testdata('org.mal-lang.coreLang-1.0.0.mar')
+        model_file = path_testdata("simple_example_model.yml")
+        self.pyprofile(
+            create_attack_graph, lang_file, model_file, num_repeated=10
+        )
 
-    # def profile_attack_graph_generate_graph(self):
-    #     """Profile the _generate_graph wrapper"""
-    #     file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
-    #     language_graph = LanguageGraph.from_mar_archive(file_path)
-    #     lang_classes_factory = LanguageClassesFactory(language_graph)
-    #     model = generate_model(lang_classes_factory, 5)
-    #     attack_graph = AttackGraph(language_graph, model)
+    def profile_attack_graph_generate_graph(self):
+        """Profile the _generate_graph wrapper"""
+        file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
+        language_graph = LanguageGraph.from_mar_archive(file_path)
+        lang_classes_factory = LanguageClassesFactory(language_graph)
+        model = generate_model(lang_classes_factory, 5)
+        attack_graph = AttackGraph(language_graph, model)
 
-    #     self.pyprofile(attack_graph._generate_graph, num_repeated=10)
+        self.pyprofile(attack_graph._generate_graph, num_repeated=10)
 
     def profile_languagegraph_create(self):
         """Profile the language Graph"""
         file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
-        self.pyprofile(LanguageGraph.from_mar_archive, file_path, num_repeated=10)
+        self.pyprofile(
+            LanguageGraph.from_mar_archive, file_path, num_repeated=10)
