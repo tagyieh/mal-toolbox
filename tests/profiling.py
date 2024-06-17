@@ -42,7 +42,7 @@ class ProfileMALToolbox(PyProfiler):
     def profile_create_attack_graph_wrapper(self):
         """Profile the create_attack_graph wrapper"""
         lang_file = path_testdata('org.mal-lang.coreLang-1.0.0.mar')
-        model_file = path_testdata("simple_example_model.yml")
+        model_file = path_testdata("simple_example_model.json")
         self.pyprofile(
             create_attack_graph, lang_file, model_file, num_repeated=10
         )
