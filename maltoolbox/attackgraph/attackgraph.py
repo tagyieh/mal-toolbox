@@ -62,25 +62,28 @@ def _process_step_expression(
             # The attack step expression just adds the name of the attack
             # step. All other step expressions only modify the target assets.
             return (target_assets, step_expression['name'])
+        
+        case 'union':
+            lh_targets, _ = _process_step_expression(lang_graph, model, target_assets, step_expression['lhs'])
+            rh_targets, _ = _process_step_expression(lang_graph, model, target_assets, step_expression['rhs'])
 
-        case 'union' | 'intersection' | 'difference':
+            return (lh_targets.union(rh_targets), None)
+
+        case 'intersection' | 'difference':
             # The set operators are used to combine the left hand and right
             # hand targets accordingly.
-            lh_targets, lh_attack_steps = _process_step_expression(
-                lang_graph, model, target_assets, step_expression['lhs'])
-            rh_targets, rh_attack_steps = _process_step_expression(
-                lang_graph, model, target_assets, step_expression['rhs'])
-
             new_target_assets = set()
-            match (step_expression['type']):
-                case 'union':
-                    new_target_assets = lh_targets.union(rh_targets)
 
-                case 'intersection':
-                    new_target_assets = lh_targets.intersection(rh_targets)
+            for asset in target_assets:
+                lh_targets, _ = _process_step_expression(lang_graph, model, set(asset), step_expression['lhs'])
+                rh_targets, _ = _process_step_expression(lang_graph, model, set(asset), step_expression['rhs'])
 
-                case 'difference':
-                    new_target_assets = lh_targets.difference(rh_targets)
+                match (step_expression['type']):
+                    case 'intersection':
+                        new_target_assets.add(lh_targets.intersection(rh_targets))
+
+                    case 'difference':
+                        new_target_assets.add(lh_targets.difference(rh_targets))
 
             return (new_target_assets, None)
 
