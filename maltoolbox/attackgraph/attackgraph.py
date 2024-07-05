@@ -110,11 +110,11 @@ def _process_step_expression(
         case 'field':
             # Change the target assets from the current ones to the associated
             # assets given the specified field name.
-            new_target_assets = []
+            new_target_assets = set()
             for target_asset in target_assets:
-                new_target_assets.extend(model.\
+                new_target_assets.update(set(model.\
                     get_associated_assets_by_field_name(target_asset,
-                        step_expression['name']))
+                        step_expression['name'])))
             return (new_target_assets, None)
 
         case 'transitive':
@@ -122,11 +122,11 @@ def _process_step_expression(
             # expression, but it proceeds recursively until no target is
             # found and it and it sets the new targets to the entire list
             # of assets identified during the entire transitive recursion.
-            new_target_assets = []
+            new_target_assets = set()
             for target_asset in target_assets:
-                new_target_assets.extend(model.\
+                new_target_assets.update(set(model.\
                     get_associated_assets_by_field_name(target_asset,
-                        step_expression['stepExpression']['name']))
+                        step_expression['stepExpression']['name'])))
             if new_target_assets:
                 (additional_assets, _) = _process_step_expression(
                     lang_graph, model, new_target_assets, step_expression)
@@ -136,18 +136,18 @@ def _process_step_expression(
                 return ([], None)
 
         case 'subType':
-            new_target_assets = []
+            new_target_assets = set()
             for target_asset in target_assets:
                 (assets, _) = _process_step_expression(
                     lang_graph, model, target_assets,
                     step_expression['stepExpression'])
-                new_target_assets.extend(assets)
+                new_target_assets.update(assets)
 
-            selected_new_target_assets = [asset for asset in \
+            selected_new_target_assets = {asset for asset in \
                 new_target_assets if specification.extends_asset(
                     lang_graph._lang_spec,
                     asset.type,
-                    step_expression['subType'])]
+                    step_expression['subType'])}
             return (selected_new_target_assets, None)
 
         case 'collect':

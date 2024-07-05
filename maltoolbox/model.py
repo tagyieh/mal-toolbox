@@ -508,7 +508,7 @@ class Model():
             'Get associated assets for asset "%s"(%d) by field name %s.',
             asset.name, asset.id, field_name
         )
-        associated_assets = []
+        associated_assets = set()
         for association in asset.associations:
             # Determine which two of the fields matches the asset given.
             # The other field will provide the associated assets.
@@ -521,7 +521,7 @@ class Model():
                 opposite_field_name = left_field_name
 
             if opposite_field_name == field_name:
-                associated_assets.extend(
+                associated_assets.update(
                     getattr(association, opposite_field_name)
                 )
 
