@@ -30,9 +30,9 @@ logger = logging.getLogger(__name__)
 def _process_step_expression(
         lang_graph: LanguageGraph,
         model: Model,
-        target_assets: list[Any],
+        target_assets: set[Any],
         step_expression: dict[str, Any]
-    ) -> tuple[list, Optional[str]]:
+    ) -> tuple[set, Optional[str]]:
     """
     Recursively process an attack step expression.
 
@@ -71,27 +71,16 @@ def _process_step_expression(
             rh_targets, rh_attack_steps = _process_step_expression(
                 lang_graph, model, target_assets, step_expression['rhs'])
 
-            new_target_assets = []
+            new_target_assets = set()
             match (step_expression['type']):
                 case 'union':
-                    new_target_assets = lh_targets
-                    for ag_node in rh_targets:
-                        if next((lnode for lnode in new_target_assets \
-                            if lnode.id != ag_node.id), None):
-                            new_target_assets.append(ag_node)
+                    new_target_assets = lh_targets.union(rh_targets)
 
                 case 'intersection':
-                    for ag_node in rh_targets:
-                        if next((lnode for lnode in lh_targets \
-                            if lnode.id == ag_node.id), None):
-                            new_target_assets.append(ag_node)
+                    new_target_assets = lh_targets.intersection(rh_targets)
 
                 case 'difference':
-                    new_target_assets = lh_targets
-                    for ag_node in lh_targets:
-                        if next((rnode for rnode in rh_targets \
-                            if rnode.id != ag_node.id), None):
-                            new_target_assets.remove(ag_node)
+                    new_target_assets = lh_targets.difference(rh_targets)
 
             return (new_target_assets, None)
 
@@ -467,11 +456,14 @@ class AttackGraph():
                         (target_assets, attack_step) = _process_step_expression(
                             self.lang_graph,
                             self.model,
-                            [asset],
+                            set(asset),
                             attack_step_attribs['requires']['stepExpressions'][0])
                         # If the step expression resolution yielded the target
                         # assets then the required assets exist in the model.
-                        existence_status = target_assets != []
+                        if target_assets:
+                            existence_status = True
+                        else:
+                            existence_status = False
 
                 mitre_info = attack_step_attribs['meta']['mitre'] if 'mitre' in\
                     attack_step_attribs['meta'] else None
@@ -512,7 +504,7 @@ class AttackGraph():
                 (target_assets, attack_step) = _process_step_expression(
                     self.lang_graph,
                     self.model,
-                    [ag_node.asset],
+                    set(ag_node.asset),
                     step_expression)
 
                 for target in target_assets:
