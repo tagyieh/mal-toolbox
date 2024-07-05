@@ -90,21 +90,22 @@ def _process_step_expression(
         case 'variable':
             # Fetch the step expression associated with the variable from
             # the language specification and resolve that.
+            new_target_assets = set()
             for target_asset in target_assets:
                 if (hasattr(target_asset, 'type')):
                     # TODO how can this info be accessed in the lang_graph
                     # directly without going through the private method?
                     variable_step_expr = lang_graph._get_variable_for_asset_type_by_name(
                         target_asset.type, step_expression['name'])
-                    return _process_step_expression(
-                        lang_graph, model, target_assets, variable_step_expr)
+                    new_target_assets.add(_process_step_expression(
+                        lang_graph, model, target_asset, variable_step_expr))
 
                 else:
                     logger.error(
                         'Requested variable from non-asset target node:'
                         '%s which cannot be resolved.', target_asset
                     )
-            return ([], None)
+            return (new_target_assets, None)
 
         case 'field':
             # Change the target assets from the current ones to the associated
