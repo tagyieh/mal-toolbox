@@ -35,7 +35,7 @@ def _process_step_expression(
         model: Model,
         target_assets: set[SchemaGeneratedClass],
         step_expression: dict[str, Any]
-    ) -> tuple[set[str], Optional[str]]:
+    ) -> tuple[set[SchemaGeneratedClass], Optional[str]]:
     """
     Recursively process an attack step expression.
 
