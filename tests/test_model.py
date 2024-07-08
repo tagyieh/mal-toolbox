@@ -6,12 +6,21 @@ from conftest import empty_model, path_testdata
 
 from maltoolbox.model import Model, AttackerAttachment
 from maltoolbox.exceptions import ModelAssociationException, DuplicateModelAssociationError
+from dataclasses import is_dataclass, replace
 
 ### Helper functions
 
+def _freeze_dataclass(cls):
+    if is_dataclass(cls):
+        return replace(cls, frozen=True)
+    return cls
+
+
 def create_application_asset(model, name):
     """Helper function to create an asset of coreLang type Application"""
-    return model.lang_classes_factory.ns.Application(name=name)
+    cls = model.lang_classes_factory.ns.Application(name=name)
+    return _freeze_dataclass(cls)
+
 
 
 def create_data_asset(model, name):
