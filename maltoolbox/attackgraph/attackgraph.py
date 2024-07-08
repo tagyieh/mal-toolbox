@@ -145,7 +145,7 @@ def _process_step_expression(
                     step_expression['stepExpression'])
                 new_target_assets.update(assets)
 
-            selected_new_target_assets = {asset: SchemaGeneratedClass for asset in \
+            selected_new_target_assets = {asset for asset in \
                 new_target_assets if specification.extends_asset(
                     lang_graph._lang_spec,
                     asset.type,
