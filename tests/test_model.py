@@ -18,8 +18,7 @@ def _freeze_dataclass(cls):
 
 def create_application_asset(model, name):
     """Helper function to create an asset of coreLang type Application"""
-    cls = model.lang_classes_factory.ns.Application(name=name)
-    return _freeze_dataclass(cls)
+    return model.lang_classes_factory.ns.Application(name=name)
 
 
 

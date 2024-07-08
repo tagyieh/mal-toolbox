@@ -6,6 +6,7 @@ import logging
 import json
 
 from typing import TYPE_CHECKING
+from dataclasses import is_dataclass, replace
 
 from .node import AttackGraphNode
 from .attacker import Attacker
@@ -27,6 +28,11 @@ if TYPE_CHECKING:
     SchemaGeneratedClass: TypeAlias = ProtocolBase
 
 logger = logging.getLogger(__name__)
+
+def _freeze_dataclass(cls):
+    if is_dataclass(cls):
+        return replace(cls, frozen=True)
+    return cls
 
 # TODO see if (part of) this can be incorporated into the LanguageGraph, so that
 # the LanguageGraph's _lang_spec private property does not need to be accessed
@@ -52,6 +58,8 @@ def _process_step_expression(
     A tuple pair containing a set of all of the target assets and the name of
     the attack step.
     """
+
+
 
     if logger.isEnabledFor(logging.DEBUG):
         # Avoid running json.dumps when not in debug
@@ -460,6 +468,8 @@ class AttackGraph():
                     case 'exist' | 'notExist':
                         # Resolve step expression associated with (non-)existence
                         # attack steps.
+                        asset = _freeze_dataclass(asset)
+
                         (target_assets, attack_step) = _process_step_expression(
                             self.lang_graph,
                             self.model,
