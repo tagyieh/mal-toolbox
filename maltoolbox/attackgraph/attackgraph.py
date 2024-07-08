@@ -20,8 +20,11 @@ from ..file_utils import (
 )
 
 if TYPE_CHECKING:
-    from typing import Any, Optional
+    from typing import Any, Optional, TypeAlias
     from ..language import LanguageGraph
+    from python_jsonschema_objects.classbuilder import ProtocolBase
+
+    SchemaGeneratedClass: TypeAlias = ProtocolBase
 
 logger = logging.getLogger(__name__)
 
@@ -30,9 +33,9 @@ logger = logging.getLogger(__name__)
 def _process_step_expression(
         lang_graph: LanguageGraph,
         model: Model,
-        target_assets: set[Any],
+        target_assets: set[SchemaGeneratedClass],
         step_expression: dict[str, Any]
-    ) -> tuple[set, Optional[str]]:
+    ) -> tuple[set[str], Optional[str]]:
     """
     Recursively process an attack step expression.
 
@@ -46,7 +49,7 @@ def _process_step_expression(
     step_expression - a dictionary containing the step expression
 
     Return:
-    A tuple pair containing a list of all of the target assets and the name of
+    A tuple pair containing a set of all of the target assets and the name of
     the attack step.
     """
 
@@ -75,8 +78,8 @@ def _process_step_expression(
             new_target_assets = set()
 
             for asset in target_assets:
-                lh_targets, _ = _process_step_expression(lang_graph, model, set(asset), step_expression['lhs'])
-                rh_targets, _ = _process_step_expression(lang_graph, model, set(asset), step_expression['rhs'])
+                lh_targets, _ = _process_step_expression(lang_graph, model, {asset}, step_expression['lhs'])
+                rh_targets, _ = _process_step_expression(lang_graph, model, {asset}, step_expression['rhs'])
 
                 match (step_expression['type']):
                     case 'intersection':
@@ -459,7 +462,7 @@ class AttackGraph():
                         (target_assets, attack_step) = _process_step_expression(
                             self.lang_graph,
                             self.model,
-                            set(asset),
+                            {asset},
                             attack_step_attribs['requires']['stepExpressions'][0])
                         # If the step expression resolution yielded the target
                         # assets then the required assets exist in the model.
@@ -508,7 +511,7 @@ class AttackGraph():
                     (target_assets, attack_step) = _process_step_expression(
                         self.lang_graph,
                         self.model,
-                        set(ag_node.asset),
+                        {ag_node.asset},
                         step_expression)
                 else:
                     continue
