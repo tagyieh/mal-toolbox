@@ -97,8 +97,9 @@ def _process_step_expression(
                     # directly without going through the private method?
                     variable_step_expr = lang_graph._get_variable_for_asset_type_by_name(
                         target_asset.type, step_expression['name'])
-                    new_target_assets.add(_process_step_expression(
-                        lang_graph, model, target_asset, variable_step_expr))
+                    targets, _ = _process_step_expression(
+                        lang_graph, model, target_asset, variable_step_expr)
+                    new_target_assets.update(targets)
 
                 else:
                     logger.error(
@@ -130,10 +131,8 @@ def _process_step_expression(
             if new_target_assets:
                 (additional_assets, _) = _process_step_expression(
                     lang_graph, model, new_target_assets, step_expression)
-                new_target_assets.extend(additional_assets)
-                return (new_target_assets, None)
-            else:
-                return ([], None)
+                new_target_assets.update(additional_assets)
+            return (new_target_assets, None)
 
         case 'subType':
             new_target_assets = set()
@@ -505,11 +504,14 @@ class AttackGraph():
             for step_expression in step_expressions:
                 # Resolve each of the attack step expressions listed for this
                 # attack step to determine children.
-                (target_assets, attack_step) = _process_step_expression(
-                    self.lang_graph,
-                    self.model,
-                    set(ag_node.asset),
-                    step_expression)
+                if ag_node.asset:
+                    (target_assets, attack_step) = _process_step_expression(
+                        self.lang_graph,
+                        self.model,
+                        set(ag_node.asset),
+                        step_expression)
+                else:
+                    continue
 
                 for target in target_assets:
                     target_node_full_name = target.name + ':' + attack_step
