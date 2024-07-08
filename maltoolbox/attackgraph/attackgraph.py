@@ -43,7 +43,7 @@ def _process_step_expression(
     lang            - a dictionary representing the MAL language specification
     model           - a maltoolbox.model.Model instance from which the attack
                       graph was generated
-    target_assets   - the list of assets that this step expression should apply
+    target_assets   - the set of assets that this step expression should apply
                       to. Initially it will contain the asset to which the
                       attack step belongs
     step_expression - a dictionary containing the step expression
@@ -83,10 +83,10 @@ def _process_step_expression(
 
                 match (step_expression['type']):
                     case 'intersection':
-                        new_target_assets.add(lh_targets.intersection(rh_targets))
+                        new_target_assets.update(lh_targets.intersection(rh_targets))
 
                     case 'difference':
-                        new_target_assets.add(lh_targets.difference(rh_targets))
+                        new_target_assets.update(lh_targets.difference(rh_targets))
 
             return (new_target_assets, None)
 
@@ -128,9 +128,10 @@ def _process_step_expression(
             # of assets identified during the entire transitive recursion.
             new_target_assets = set()
             for target_asset in target_assets:
-                new_target_assets.update(set(model.\
+                associated_assets = set(model.\
                     get_associated_assets_by_field_name(target_asset,
-                        step_expression['stepExpression']['name'])))
+                        step_expression['stepExpression']['name']))
+                new_target_assets.update(associated_assets)
             if new_target_assets:
                 (additional_assets, _) = _process_step_expression(
                     lang_graph, model, new_target_assets, step_expression)
