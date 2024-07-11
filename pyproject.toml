@@ -53,7 +53,7 @@ filterwarnings = "ignore:invalid escape sequence"
 exclude = [
   'maltoolbox/ingestors',
   'maltoolbox/translators',
-  'maltoolbox/language/compiler',
+  'maltoolbox/language/compile/mal_(lexer|parser).py',
   'venv'
 ]
 allow_redefinition = true

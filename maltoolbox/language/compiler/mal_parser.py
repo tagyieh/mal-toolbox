@@ -1,4 +1,3 @@
-# mypy: ignore-errors
 # Generated from mal.g4 by ANTLR 4.13.1
 # encoding: utf-8
 from antlr4 import *
@@ -140,23 +139,23 @@ class malParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'abstract'", "'asset'", "'associations'", 
-                     "'extends'", "'include'", "'category'", "'info'", "'let'", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'E'", "'C'", 
-                     "'I'", "'A'", "<INVALID>", "'('", "')'", "'{'", "'}'", 
-                     "'#'", "':'", "'<--'", "'-->'", "'['", "']'", "'*'", 
-                     "'1'", "'='", "'-'", "'/\\'", "'\\/'", "'..'", "'.'", 
-                     "'&'", "'|'", "'!E'", "'@'", "'<-'", "'+>'", "'->'", 
+    literalNames = [ "<INVALID>", "'abstract'", "'asset'", "'associations'",
+                     "'extends'", "'include'", "'category'", "'info'", "'let'",
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'E'", "'C'",
+                     "'I'", "'A'", "<INVALID>", "'('", "')'", "'{'", "'}'",
+                     "'#'", "':'", "'<--'", "'-->'", "'['", "']'", "'*'",
+                     "'1'", "'='", "'-'", "'/\\'", "'\\/'", "'..'", "'.'",
+                     "'&'", "'|'", "'!E'", "'@'", "'<-'", "'+>'", "'->'",
                      "','", "'+'", "'/'", "'^'" ]
 
-    symbolicNames = [ "<INVALID>", "ABSTRACT", "ASSET", "ASSOCIATIONS", 
-                      "EXTENDS", "INCLUDE", "CATEGORY", "INFO", "LET", "STRING", 
-                      "INT", "FLOAT", "EXISTS", "C", "I", "A", "ID", "LPAREN", 
-                      "RPAREN", "LCURLY", "RCURLY", "HASH", "COLON", "LARROW", 
-                      "RARROW", "LSQUARE", "RSQUARE", "STAR", "ONE", "ASSIGN", 
-                      "MINUS", "INTERSECT", "UNION", "RANGE", "DOT", "AND", 
-                      "OR", "NOTEXISTS", "AT", "REQUIRES", "INHERITS", "LEADSTO", 
-                      "COMMA", "PLUS", "DIVIDE", "POWER", "INLINE_COMMENT", 
+    symbolicNames = [ "<INVALID>", "ABSTRACT", "ASSET", "ASSOCIATIONS",
+                      "EXTENDS", "INCLUDE", "CATEGORY", "INFO", "LET", "STRING",
+                      "INT", "FLOAT", "EXISTS", "C", "I", "A", "ID", "LPAREN",
+                      "RPAREN", "LCURLY", "RCURLY", "HASH", "COLON", "LARROW",
+                      "RARROW", "LSQUARE", "RSQUARE", "STAR", "ONE", "ASSIGN",
+                      "MINUS", "INTERSECT", "UNION", "RANGE", "DOT", "AND",
+                      "OR", "NOTEXISTS", "AT", "REQUIRES", "INHERITS", "LEADSTO",
+                      "COMMA", "PLUS", "DIVIDE", "POWER", "INLINE_COMMENT",
                       "MULTILINE_COMMENT", "WS" ]
 
     RULE_mal = 0
@@ -194,11 +193,11 @@ class malParser ( Parser ):
     RULE_multatom = 32
     RULE_linkname = 33
 
-    ruleNames =  [ "mal", "declaration", "include", "define", "category", 
-                   "meta", "asset", "step", "steptype", "tag", "cias", "cia", 
-                   "ttc", "ttcexpr", "ttcterm", "ttcfact", "ttcatom", "ttcdist", 
-                   "precondition", "reaches", "number", "variable", "expr", 
-                   "parts", "part", "varsubst", "type", "setop", "associations", 
+    ruleNames =  [ "mal", "declaration", "include", "define", "category",
+                   "meta", "asset", "step", "steptype", "tag", "cias", "cia",
+                   "ttc", "ttcexpr", "ttcterm", "ttcfact", "ttcatom", "ttcdist",
+                   "precondition", "reaches", "number", "variable", "expr",
+                   "parts", "part", "varsubst", "type", "setop", "associations",
                    "association", "field", "mult", "multatom", "linkname" ]
 
     EOF = Token.EOF
@@ -308,13 +307,13 @@ class malParser ( Parser ):
             token = self._input.LA(1)
             if token in [3, 5, 6, 21]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 69 
+                self.state = 69
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while True:
                     self.state = 68
                     self.declaration()
-                    self.state = 71 
+                    self.state = 71
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 2097256) != 0)):
@@ -2560,7 +2559,7 @@ class malParser ( Parser ):
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     self.state = 318
-                    self.meta() 
+                    self.meta()
                 self.state = 323
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,32,self._ctx)

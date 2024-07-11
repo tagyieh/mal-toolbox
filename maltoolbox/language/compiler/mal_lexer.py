@@ -1,4 +1,3 @@
-# mypy: ignore-errors
 # Generated from mal.g4 by ANTLR 4.13.1
 from antlr4 import *
 import sys
@@ -174,30 +173,30 @@ class malLexer(Lexer):
     modeNames = [ "DEFAULT_MODE" ]
 
     literalNames = [ "<INVALID>",
-            "'abstract'", "'asset'", "'associations'", "'extends'", "'include'", 
-            "'category'", "'info'", "'let'", "'E'", "'C'", "'I'", "'A'", 
-            "'('", "')'", "'{'", "'}'", "'#'", "':'", "'<--'", "'-->'", 
-            "'['", "']'", "'*'", "'1'", "'='", "'-'", "'/\\'", "'\\/'", 
-            "'..'", "'.'", "'&'", "'|'", "'!E'", "'@'", "'<-'", "'+>'", 
+            "'abstract'", "'asset'", "'associations'", "'extends'", "'include'",
+            "'category'", "'info'", "'let'", "'E'", "'C'", "'I'", "'A'",
+            "'('", "')'", "'{'", "'}'", "'#'", "':'", "'<--'", "'-->'",
+            "'['", "']'", "'*'", "'1'", "'='", "'-'", "'/\\'", "'\\/'",
+            "'..'", "'.'", "'&'", "'|'", "'!E'", "'@'", "'<-'", "'+>'",
             "'->'", "','", "'+'", "'/'", "'^'" ]
 
     symbolicNames = [ "<INVALID>",
-            "ABSTRACT", "ASSET", "ASSOCIATIONS", "EXTENDS", "INCLUDE", "CATEGORY", 
-            "INFO", "LET", "STRING", "INT", "FLOAT", "EXISTS", "C", "I", 
-            "A", "ID", "LPAREN", "RPAREN", "LCURLY", "RCURLY", "HASH", "COLON", 
-            "LARROW", "RARROW", "LSQUARE", "RSQUARE", "STAR", "ONE", "ASSIGN", 
-            "MINUS", "INTERSECT", "UNION", "RANGE", "DOT", "AND", "OR", 
-            "NOTEXISTS", "AT", "REQUIRES", "INHERITS", "LEADSTO", "COMMA", 
-            "PLUS", "DIVIDE", "POWER", "INLINE_COMMENT", "MULTILINE_COMMENT", 
+            "ABSTRACT", "ASSET", "ASSOCIATIONS", "EXTENDS", "INCLUDE", "CATEGORY",
+            "INFO", "LET", "STRING", "INT", "FLOAT", "EXISTS", "C", "I",
+            "A", "ID", "LPAREN", "RPAREN", "LCURLY", "RCURLY", "HASH", "COLON",
+            "LARROW", "RARROW", "LSQUARE", "RSQUARE", "STAR", "ONE", "ASSIGN",
+            "MINUS", "INTERSECT", "UNION", "RANGE", "DOT", "AND", "OR",
+            "NOTEXISTS", "AT", "REQUIRES", "INHERITS", "LEADSTO", "COMMA",
+            "PLUS", "DIVIDE", "POWER", "INLINE_COMMENT", "MULTILINE_COMMENT",
             "WS" ]
 
-    ruleNames = [ "ABSTRACT", "ASSET", "ASSOCIATIONS", "EXTENDS", "INCLUDE", 
-                  "CATEGORY", "INFO", "LET", "STRING", "INT", "FLOAT", "EXISTS", 
-                  "C", "I", "A", "ID", "LPAREN", "RPAREN", "LCURLY", "RCURLY", 
-                  "HASH", "COLON", "LARROW", "RARROW", "LSQUARE", "RSQUARE", 
-                  "STAR", "ONE", "ASSIGN", "MINUS", "INTERSECT", "UNION", 
-                  "RANGE", "DOT", "AND", "OR", "NOTEXISTS", "AT", "REQUIRES", 
-                  "INHERITS", "LEADSTO", "COMMA", "PLUS", "DIVIDE", "POWER", 
+    ruleNames = [ "ABSTRACT", "ASSET", "ASSOCIATIONS", "EXTENDS", "INCLUDE",
+                  "CATEGORY", "INFO", "LET", "STRING", "INT", "FLOAT", "EXISTS",
+                  "C", "I", "A", "ID", "LPAREN", "RPAREN", "LCURLY", "RCURLY",
+                  "HASH", "COLON", "LARROW", "RARROW", "LSQUARE", "RSQUARE",
+                  "STAR", "ONE", "ASSIGN", "MINUS", "INTERSECT", "UNION",
+                  "RANGE", "DOT", "AND", "OR", "NOTEXISTS", "AT", "REQUIRES",
+                  "INHERITS", "LEADSTO", "COMMA", "PLUS", "DIVIDE", "POWER",
                   "INLINE_COMMENT", "MULTILINE_COMMENT", "WS" ]
 
     grammarFileName = "mal.g4"
