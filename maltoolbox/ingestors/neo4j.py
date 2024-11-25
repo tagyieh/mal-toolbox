@@ -98,7 +98,7 @@ def ingest_model(model,
                 type=str(asset.type))
 
     for assoc in model.associations:
-        firstElementName, secondElementName = assoc._properties.keys()
+        _, firstElementName, secondElementName = assoc._properties.keys()
         firstElements = getattr(assoc, firstElementName)
         secondElements = getattr(assoc, secondElementName)
         for first_asset in firstElements:

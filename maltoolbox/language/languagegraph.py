@@ -412,7 +412,7 @@ class LanguageGraphAttackStep:
             'info': self.info,
             'overrides': self.overrides,
             'inherits': self.inherits.full_name if self.inherits else None,
-            'tags': list(self.tags)
+            'tags': list(self.tags),
             'detectors': {label: detector.to_dict() for label, detector in 
             self.detectors.items()},
         }
@@ -1441,7 +1441,7 @@ class LanguageGraph():
                     attack_step_node.detectors[detector["name"]] = Detector(
                         context=Context(
                             {
-                                label: self.get_asset_by_name(asset)
+                                label: self.assets[asset_name]
                                 for label, asset in detector["context"].items()
                             }
                         ),

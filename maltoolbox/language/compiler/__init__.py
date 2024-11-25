@@ -28,13 +28,9 @@ class MalCompiler(ParseTreeVisitor):
         self.visited_files: set[Path] = set()
         self.path_stack: list[Path] = []
 
-        # TODO: The toolbox does not support assocs with the same name.
-        self.assoc_names: list[str] = []
-
         super().__init__(*args, **kwargs)
 
-
-    def compile(self, malfile: Path|str):
+    def compile(self, malfile: Path | str):
         current_file = Path(malfile)
 
         if not current_file.is_absolute() and self.path_stack:
@@ -103,12 +99,6 @@ class MalCompiler(ParseTreeVisitor):
                     unique.append(item)
             langspec[key] = unique
 
-        # TODO: The toolbox does not support assets and associations sharing the same name.
-        _asset_names = (asset["name"] for asset in langspec["assets"])
-        for assoc in langspec["associations"]:
-            if assoc["name"] in _asset_names:
-                assoc["name"] = f"{assoc['name']}Assoc"
-
         return langspec
 
     def visitInclude(self, ctx):
@@ -148,14 +138,16 @@ class MalCompiler(ParseTreeVisitor):
     def visitCategory(self, ctx):
         category = {}
         category["name"] = ctx.ID().getText()
-        category["meta"] = {(info := self.visit(meta))[0]: info[1] for meta in ctx.meta()}
+        category["meta"] = {
+            (info := self.visit(meta))[0]: info[1] for meta in ctx.meta()
+        }
 
         assets = [self.visit(asset) for asset in ctx.asset()]
 
         return ("categories", ([category], assets))
 
     def visitMeta(self, ctx):
-        return (ctx.ID().getText(), ctx.text().getText().strip('"\''))
+        return (ctx.ID().getText(), ctx.text().getText().strip("\"'"))
 
     def visitAsset(self, ctx):
         asset = {}
@@ -448,20 +440,10 @@ class MalCompiler(ParseTreeVisitor):
     def visitAssociation(self, ctx):
         association = {}
 
-        # TODO: The toolbox does not support underscores in association names.
-        association["name"] = self.visit(ctx.linkname()).replace("_", "")
-
-        # TODO: The toolbox does not support multiple assocs with the same name.
-        # Add the name as is to be able to count it correctly.
-        self.assoc_names.append(association["name"])
-
-        if association["name"] in self.assoc_names:
-            association["name"] = f"{association['name']}{self.assoc_names.count(association['name'])}"
-
-        # Add the changed name in case it already exists in the list, to be able to count it.
-        self.assoc_names.append(association["name"])
-
-        association["meta"] = {(info := self.visit(meta))[0]: info[1] for meta in ctx.meta()}
+        association["name"] = self.visit(ctx.linkname())
+        association["meta"] = {
+            (info := self.visit(meta))[0]: info[1] for meta in ctx.meta()
+        }
         association["leftAsset"] = ctx.ID()[0].getText()
         association["leftField"] = self.visit(ctx.field()[0])
 
