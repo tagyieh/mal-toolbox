@@ -6,6 +6,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 import logging
+import random
 from typing import TYPE_CHECKING
 
 from .file_utils import (
@@ -846,6 +847,27 @@ class Model():
             for attacker_id in attackers_info:
                 attacker = AttackerAttachment(name = attackers_info[attacker_id]['name'])
                 attacker.entry_points = []
+
+                num_entry_points = attackers_info[attacker_id]['entry_points'].pop("random", 0)
+                while num_entry_points:
+                    random_asset = random.choice(model.assets)
+
+                    steps = [
+                        step.name
+                        for step in model.lang_classes_factory.lang_graph.assets[random_asset.type].attack_steps.values()
+                        if step.type != "defense"
+                    ]
+
+                    if len(steps) == 0:
+                        continue
+
+                    attacker.entry_points.append((
+                        random_asset,
+                        random.choices(steps)
+                    ))
+
+                    num_entry_points -= 1
+
                 for asset_name, entry_points_dict in \
                         attackers_info[attacker_id]['entry_points'].items():
                     attacker.entry_points.append(
