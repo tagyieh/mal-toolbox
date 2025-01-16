@@ -413,7 +413,7 @@ class LanguageGraphAttackStep:
             'overrides': self.overrides,
             'inherits': self.inherits.full_name if self.inherits else None,
             'tags': list(self.tags),
-            'detectors': {label: detector.to_dict() for label, detector in 
+            'detectors': {label: detector.to_dict() for label, detector in
             self.detectors.items()},
         }
 
@@ -1436,12 +1436,12 @@ class LanguageGraph():
                 attack_step_node._attributes = attack_step_attribs
                 asset.attack_steps[attack_step_name] = attack_step_node
 
-                for detector in attack_step_attribs.get("detectors", 
+                for detector in attack_step_attribs.get("detectors",
                                                         {}).values():
                     attack_step_node.detectors[detector["name"]] = Detector(
                         context=Context(
                             {
-                                label: self.assets[asset_name]
+                                label: self.assets[asset]
                                 for label, asset in detector["context"].items()
                             }
                         ),
