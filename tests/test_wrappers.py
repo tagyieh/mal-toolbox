@@ -1,5 +1,7 @@
-from maltoolbox.wrappers import create_attack_graph
 from conftest import path_testdata
+
+from maltoolbox.wrappers import create_attack_graph
+
 
 def test_create_attack_graph():
     """See that the create attack graph wrapper works"""

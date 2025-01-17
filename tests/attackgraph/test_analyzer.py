@@ -1,19 +1,20 @@
 """Tests for analyzers"""
 
 from maltoolbox.attackgraph import AttackGraphNode
-from maltoolbox.attackgraph.analyzers.apriori import propagate_viability_from_unviable_node
+from maltoolbox.attackgraph.analyzers.apriori import (
+    propagate_viability_from_unviable_node,
+)
 
 # Apriori analyzer
 # TODO: Add apriori analyzer test implementations
 
+
 def test_analyzers_apriori_propagate_viability_from_node():
     """See if viability is propagated correctly"""
-    pass
 
 
 def test_analyzers_apriori_propagate_necessity_from_node():
     """See if necessity is propagated correctly"""
-    pass
 
 
 def test_analyzers_apriori_evaluate_viability():
@@ -35,42 +36,26 @@ def test_analyzers_apriori_calculate_viability_and_necessity():
 def test_analyzers_apriori_prune_unviable_and_unnecessary_nodes():
     pass
 
+
 def test_analyzers_apriori_propagate_viability_from_unviable_node():
     """Create a graph from nodes
 
-            node1
-            /    \
+        node1
+        /    \
         node2    node3
-        /   \   /    \
+    /   \\   /    \
     node4  node5    node6
     """
-
     # Create a graph of nodes according to above diagram
-    node1 = AttackGraphNode(
-        type = "defense",
-        name = "node1"
-    )
+    node1 = AttackGraphNode(type='defense', name='node1')
     node2 = AttackGraphNode(
-        type = "or",
-        name = "node2",
+        type='or',
+        name='node2',
     )
-    node3 = AttackGraphNode(
-        type = "or",
-        name = "node3",
-        defense_status=0.0
-    )
-    node4 = AttackGraphNode(
-        type = "or",
-        name = "node4"
-    )
-    node5 = AttackGraphNode(
-        type = "or",
-        name = "node5"
-    )
-    node6 = AttackGraphNode(
-        type = "or",
-        name = "node6"
-    )
+    node3 = AttackGraphNode(type='or', name='node3', defense_status=0.0)
+    node4 = AttackGraphNode(type='or', name='node4')
+    node5 = AttackGraphNode(type='or', name='node5')
+    node6 = AttackGraphNode(type='or', name='node6')
 
     node1.id = 1
     node2.id = 2

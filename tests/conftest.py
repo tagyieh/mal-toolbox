@@ -1,21 +1,24 @@
 """Fixtures and helpers used in several test modules"""
+
 import os
+
 import pytest
 
-from maltoolbox.language import LanguageGraph, LanguageClassesFactory
+from maltoolbox.language import LanguageClassesFactory, LanguageGraph
 from maltoolbox.model import Model
 
+# Helpers
 
-## Helpers
 
 def path_testdata(filename):
     """Returns the absolute path of a test data file (in ./testdata)
 
     Arguments:
     filename    - filename to append to path of ./testdata
+
     """
     current_dir = os.path.dirname(os.path.realpath(__file__))
-    return os.path.join(current_dir, f"testdata/{filename}")
+    return os.path.join(current_dir, f'testdata/{filename}')
 
 
 def empty_model(name, lang_classes_factory):
@@ -23,16 +26,17 @@ def empty_model(name, lang_classes_factory):
 
     Uses coreLang specification (fixture) to create and return Model
     """
-
     # Create instance model from model json file
     return Model(name, lang_classes_factory)
 
-## Fixtures (can be ingested into tests)
+
+# Fixtures (can be ingested into tests)
+
 
 @pytest.fixture
 def corelang_lang_graph():
     """Fixture that returns the coreLang language specification as dict"""
-    mar_file_path = path_testdata("org.mal-lang.coreLang-1.0.0.mar")
+    mar_file_path = path_testdata('org.mal-lang.coreLang-1.0.0.mar')
     return LanguageGraph.from_mar_archive(mar_file_path)
 
 

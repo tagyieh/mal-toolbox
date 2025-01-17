@@ -1,14 +1,14 @@
 """Unit tests for AttackGraph functionality"""
 
 import copy
-import pytest
 from unittest.mock import patch
 
-from maltoolbox.language import LanguageGraph
-from maltoolbox.attackgraph import AttackGraph, AttackGraphNode, Attacker
-from maltoolbox.model import Model, AttackerAttachment
-
+import pytest
 from test_model import create_application_asset, create_association
+
+from maltoolbox.attackgraph import Attacker, AttackGraph, AttackGraphNode
+from maltoolbox.language import LanguageGraph
+from maltoolbox.model import AttackerAttachment, Model
 
 
 @pytest.fixture
@@ -20,10 +20,9 @@ def example_attackgraph(corelang_lang_graph: LanguageGraph, model: Model):
     with an association and an attacker to create and return
     an AttackGraph object
     """
-
     # Create 2 assets
-    app1 = create_application_asset(model, "Application 1")
-    app2 = create_application_asset(model, "Application 2")
+    app1 = create_application_asset(model, 'Application 1')
+    app2 = create_application_asset(model, 'Application 2')
     model.add_asset(app1)
     model.add_asset(app2)
 
@@ -32,57 +31,37 @@ def example_attackgraph(corelang_lang_graph: LanguageGraph, model: Model):
     model.add_association(assoc)
 
     attacker = AttackerAttachment()
-    attacker.entry_points = [
-        (app1, ['networkConnectUninspected'])
-    ]
+    attacker.entry_points = [(app1, ['networkConnectUninspected'])]
     model.add_attacker(attacker)
 
-    return AttackGraph(
-        lang_graph=corelang_lang_graph,
-        model=model
-    )
+    return AttackGraph(lang_graph=corelang_lang_graph, model=model)
 
 
 def test_attackgraph_init(corelang_lang_graph, model):
     """Test init with different params given"""
-
     # _generate_graph is called when langspec and model is given to init
-    with patch("maltoolbox.attackgraph.AttackGraph._generate_graph")\
-         as _generate_graph:
-        AttackGraph(
-            lang_graph=corelang_lang_graph,
-            model=model
-        )
+    with patch('maltoolbox.attackgraph.AttackGraph._generate_graph') as _generate_graph:
+        AttackGraph(lang_graph=corelang_lang_graph, model=model)
         assert _generate_graph.call_count == 1
 
     # _generate_graph is not called when no langspec or model is given
-    with patch("maltoolbox.attackgraph.AttackGraph._generate_graph")\
-        as _generate_graph:
-        AttackGraph(
-            lang_graph=None,
-            model=None
-        )
+    with patch('maltoolbox.attackgraph.AttackGraph._generate_graph') as _generate_graph:
+        AttackGraph(lang_graph=None, model=None)
         assert _generate_graph.call_count == 0
 
-        AttackGraph(
-            lang_graph=corelang_lang_graph,
-            model=None
-        )
+        AttackGraph(lang_graph=corelang_lang_graph, model=None)
         assert _generate_graph.call_count == 0
 
-        AttackGraph(
-            lang_graph=None,
-            model=model
-        )
+        AttackGraph(lang_graph=None, model=model)
         assert _generate_graph.call_count == 0
+
 
 def attackgraph_save_load_no_model_given(
-        example_attackgraph: AttackGraph,
-        attach_attackers: bool
-    ):
+    example_attackgraph: AttackGraph, attach_attackers: bool
+):
     """Save AttackGraph to a file and load it
-    Note: Will create file in /tmp"""
-
+    Note: Will create file in /tmp
+    """
     reward = 1
     node_with_reward_before = example_attackgraph.nodes[0]
     node_with_reward_before.extras['reward'] = reward
@@ -91,7 +70,7 @@ def attackgraph_save_load_no_model_given(
         example_attackgraph.attach_attackers()
 
     # Save the example attack graph to /tmp
-    example_graph_path = "/tmp/example_graph.yml"
+    example_graph_path = '/tmp/example_graph.yml'
     example_attackgraph.save_to_file(example_graph_path)
 
     # Load the attack graph
@@ -112,27 +91,26 @@ def attackgraph_save_load_no_model_given(
     # Loaded graph nodes will not have 'asset' since it does not have a model.
     for loaded_node in loaded_attack_graph.nodes:
         if not isinstance(loaded_node.id, int):
-            raise ValueError(f'Invalid node id for loaded node.')
+            raise ValueError('Invalid node id for loaded node.')
         original_node = example_attackgraph.get_node_by_id(loaded_node.id)
 
-        assert original_node, \
-            f'Failed to find original node for id {loaded_node.id}.'
+        assert original_node, f'Failed to find original node for id {loaded_node.id}.'
 
         # Convert loaded and original node to dicts
         loaded_node_dict = loaded_node.to_dict()
         original_node_dict = original_node.to_dict()
         for child in original_node_dict['children']:
             child_node = example_attackgraph.get_node_by_id(child)
-            assert child_node, \
-                f'Failed to find child node for id {child}.'
-            original_node_dict['children'][child] = str(child_node.id) + \
-                ":" + child_node.name
+            assert child_node, f'Failed to find child node for id {child}.'
+            original_node_dict['children'][child] = (
+                str(child_node.id) + ':' + child_node.name
+            )
         for parent in original_node_dict['parents']:
             parent_node = example_attackgraph.get_node_by_id(parent)
-            assert parent_node, \
-                f'Failed to find parent node for id {parent}.'
-            original_node_dict['parents'][parent] = str(parent_node.id) + \
-                ":" + parent_node.name
+            assert parent_node, f'Failed to find parent node for id {parent}.'
+            original_node_dict['parents'][parent] = (
+                str(parent_node.id) + ':' + parent_node.name
+            )
 
         # Remove key that is not expected to match.
         del original_node_dict['asset']
@@ -142,60 +120,60 @@ def attackgraph_save_load_no_model_given(
 
     for loaded_attacker in loaded_attack_graph.attackers:
         if not isinstance(loaded_attacker.id, int):
-            raise ValueError(f'Invalid attacker id for loaded attacker.')
-        original_attacker = example_attackgraph.get_attacker_by_id(
-            loaded_attacker.id)
-        assert original_attacker, \
-            f'Failed to find original attacker for id {loaded_attacker.id}.'
+            raise ValueError('Invalid attacker id for loaded attacker.')
+        original_attacker = example_attackgraph.get_attacker_by_id(loaded_attacker.id)
+        assert (
+            original_attacker
+        ), f'Failed to find original attacker for id {loaded_attacker.id}.'
         loaded_attacker_dict = loaded_attacker.to_dict()
         original_attacker_dict = original_attacker.to_dict()
         for step in original_attacker_dict['entry_points']:
             attack_step_name = original_attacker_dict['entry_points'][step]
-            attack_step_name = str(step) + ':' + \
-                attack_step_name.split(':')[-1]
+            attack_step_name = str(step) + ':' + attack_step_name.split(':')[-1]
             original_attacker_dict['entry_points'][step] = attack_step_name
         for step in original_attacker_dict['reached_attack_steps']:
-            attack_step_name = \
-                original_attacker_dict['reached_attack_steps'][step]
-            attack_step_name = str(step) + ':' + \
-                attack_step_name.split(':')[-1]
-            original_attacker_dict['reached_attack_steps'][step] = \
-                attack_step_name
+            attack_step_name = original_attacker_dict['reached_attack_steps'][step]
+            attack_step_name = str(step) + ':' + attack_step_name.split(':')[-1]
+            original_attacker_dict['reached_attack_steps'][step] = attack_step_name
         assert loaded_attacker_dict == original_attacker_dict
 
+
 def test_attackgraph_save_load_no_model_given_without_attackers(
-        example_attackgraph: AttackGraph
-    ):
+    example_attackgraph: AttackGraph,
+):
     attackgraph_save_load_no_model_given(example_attackgraph, False)
 
+
 def test_attackgraph_save_load_no_model_given_with_attackers(
-        example_attackgraph: AttackGraph
-    ):
+    example_attackgraph: AttackGraph,
+):
     attackgraph_save_load_no_model_given(example_attackgraph, True)
 
+
 def attackgraph_save_and_load_json_yml_model_given(
-        example_attackgraph: AttackGraph,
-        attach_attackers: bool
-    ):
+    example_attackgraph: AttackGraph, attach_attackers: bool
+):
     """Try to save and load attack graph from json and yml with model given,
     and make sure the dict represenation is the same (except for reward field)
     """
-
     if attach_attackers:
         example_attackgraph.attach_attackers()
 
-    for attackgraph_path in ("/tmp/attackgraph.yml", "/tmp/attackgraph.json"):
+    for attackgraph_path in ('/tmp/attackgraph.yml', '/tmp/attackgraph.json'):
         example_attackgraph.save_to_file(attackgraph_path)
         loaded_attackgraph = AttackGraph.load_from_file(
-            attackgraph_path, model=example_attackgraph.model)
+            attackgraph_path, model=example_attackgraph.model
+        )
 
         # Make sure model was 'attached' correctly
         assert loaded_attackgraph.model == example_attackgraph.model
 
-        for node_full_name, loaded_node_dict in \
-                loaded_attackgraph._to_dict()['attack_steps'].items():
-            original_node_dict = \
-                example_attackgraph._to_dict()['attack_steps'][node_full_name]
+        for node_full_name, loaded_node_dict in loaded_attackgraph._to_dict()[
+            'attack_steps'
+        ].items():
+            original_node_dict = example_attackgraph._to_dict()['attack_steps'][
+                node_full_name
+            ]
 
             # Make sure nodes are the same (except for the excluded keys)
             assert loaded_node_dict == original_node_dict
@@ -203,7 +181,7 @@ def attackgraph_save_and_load_json_yml_model_given(
         for node in loaded_attackgraph.nodes:
             # Make sure node gets an asset when loaded with model
             assert node.asset
-            assert node.full_name == node.asset.name + ":" + node.name
+            assert node.full_name == node.asset.name + ':' + node.name
 
             # Make sure node was added to lookup dict with correct id / name
             assert node.id is not None
@@ -212,45 +190,42 @@ def attackgraph_save_and_load_json_yml_model_given(
 
         for loaded_attacker in loaded_attackgraph.attackers:
             if not isinstance(loaded_attacker.id, int):
-                raise ValueError(f'Invalid attacker id for loaded attacker.')
+                raise ValueError('Invalid attacker id for loaded attacker.')
             original_attacker = example_attackgraph.get_attacker_by_id(
-                loaded_attacker.id)
-            assert original_attacker, \
-                f'Failed to find original attacker for id ' \
-                '{loaded_attacker.id}.'
+                loaded_attacker.id
+            )
+            assert original_attacker, (
+                'Failed to find original attacker for id ' '{loaded_attacker.id}.'
+            )
             loaded_attacker_dict = loaded_attacker.to_dict()
             original_attacker_dict = original_attacker.to_dict()
             assert loaded_attacker_dict == original_attacker_dict
 
+
 def test_attackgraph_save_and_load_json_yml_model_given_without_attackers(
-        example_attackgraph: AttackGraph
-    ):
-        attackgraph_save_and_load_json_yml_model_given(
-            example_attackgraph,
-            False
-        )
+    example_attackgraph: AttackGraph,
+):
+    attackgraph_save_and_load_json_yml_model_given(example_attackgraph, False)
+
 
 def test_attackgraph_save_and_load_json_yml_model_given_with_attackers(
-        example_attackgraph: AttackGraph
-    ):
-        attackgraph_save_and_load_json_yml_model_given(
-            example_attackgraph,
-            True
-        )
+    example_attackgraph: AttackGraph,
+):
+    attackgraph_save_and_load_json_yml_model_given(example_attackgraph, True)
+
 
 def test_attackgraph_get_node_by_id(example_attackgraph: AttackGraph):
     """Make sure get_node_by_id works as intended"""
     assert len(example_attackgraph.nodes)  # make sure loop is run
     for node in example_attackgraph.nodes:
         if not isinstance(node.id, int):
-            raise ValueError(f'Invalid node id.')
+            raise ValueError('Invalid node id.')
         get_node = example_attackgraph.get_node_by_id(node.id)
         assert get_node == node
 
 
 def test_attackgraph_attach_attackers(example_attackgraph: AttackGraph):
     """Make sure attackers are properly attached to graph"""
-
     app1_ncu = example_attackgraph.get_node_by_full_name(
         'Application 1:networkConnectUninspected'
     )
@@ -270,17 +245,17 @@ def test_attackgraph_attach_attackers(example_attackgraph: AttackGraph):
 
     assert app1_ncu in attacker.entry_points
     assert app1_ncu in attacker.reached_attack_steps
-    assert not app1_auv in attacker.entry_points
-    assert not app1_auv in attacker.reached_attack_steps
+    assert app1_auv not in attacker.entry_points
+    assert app1_auv not in attacker.reached_attack_steps
 
     attacker.compromise(app1_auv)
     assert app1_auv in attacker.reached_attack_steps
     assert app1_auv not in attacker.entry_points
 
-
     for node in attacker.reached_attack_steps:
         # Make sure the Attacker is present on the nodes they have compromised
         assert attacker in node.compromised_by
+
 
 def test_attackgraph_generate_graph(example_attackgraph: AttackGraph):
     """Make sure the graph is correctly generated from model and lang"""
@@ -297,10 +272,9 @@ def test_attackgraph_generate_graph(example_attackgraph: AttackGraph):
     num_assets_attack_steps = 0
     assert example_attackgraph.model
     for asset in example_attackgraph.model.assets:
-        attack_steps = example_attackgraph.\
-            lang_graph._get_attacks_for_asset_type(
-                asset.type
-            )
+        attack_steps = example_attackgraph.lang_graph._get_attacks_for_asset_type(
+            asset.type
+        )
         num_assets_attack_steps += len(attack_steps)
 
     # Each attack step will get one node
@@ -309,11 +283,11 @@ def test_attackgraph_generate_graph(example_attackgraph: AttackGraph):
 
 def test_attackgraph_according_to_corelang(corelang_lang_graph, model):
     """Looking at corelang .mal file, make sure the resulting
-    AttackGraph contains expected nodes"""
-
+    AttackGraph contains expected nodes
+    """
     # Create 2 assets
-    app1 = create_application_asset(model, "Application 1")
-    app2 = create_application_asset(model, "Application 2")
+    app1 = create_application_asset(model, 'Application 1')
+    app2 = create_application_asset(model, 'Application 2')
     model.add_asset(app1)
     model.add_asset(app2)
 
@@ -324,48 +298,77 @@ def test_attackgraph_according_to_corelang(corelang_lang_graph, model):
 
     # These are all attack 71 steps and defenses for Application asset in MAL
     expected_node_names_application = [
-        "notPresent", "attemptUseVulnerability", "successfulUseVulnerability",
-        "useVulnerability", "attemptReverseReach", "successfulReverseReach",
-        "reverseReach", "localConnect", "networkConnectUninspected",
-        "networkConnectInspected", "networkConnect",
-        "specificAccessNetworkConnect",
-        "accessNetworkAndConnections", "attemptNetworkConnectFromResponse",
-        "networkConnectFromResponse", "specificAccessFromLocalConnection",
-        "specificAccessFromNetworkConnection", "specificAccess",
-        "bypassContainerization", "authenticate",
-        "specificAccessAuthenticate", "localAccess", "networkAccess",
-        "fullAccess", "physicalAccessAchieved", "attemptUnsafeUserActivity",
-        "successfulUnsafeUserActivity", "unsafeUserActivity",
-        "attackerUnsafeUserActivityCapability",
-        "attackerUnsafeUserActivityCapabilityWithReverseReach",
-        "attackerUnsafeUserActivityCapabilityWithoutReverseReach",
-        "supplyChainAuditing", "bypassSupplyChainAuditing",
-        "supplyChainAuditingBypassed",
-        "attemptFullAccessFromSupplyChainCompromise",
-        "fullAccessFromSupplyChainCompromise",
-        "attemptReadFromSoftProdVulnerability",
-        "attemptModifyFromSoftProdVulnerability",
-        "attemptDenyFromSoftProdVulnerability", "softwareCheck",
-        "softwareProductVulnerabilityLocalAccessAchieved",
-        "softwareProductVulnerabilityNetworkAccessAchieved",
-        "softwareProductVulnerabilityPhysicalAccessAchieved",
-        "softwareProductVulnerabilityLowPrivilegesAchieved",
-        "softwareProductVulnerabilityHighPrivilegesAchieved",
-        "softwareProductVulnerabilityUserInteractionAchieved",
-        "attemptSoftwareProductAbuse",
-        "softwareProductAbuse", "readFromSoftProdVulnerability",
-        "modifyFromSoftProdVulnerability",
-        "denyFromSoftProdVulnerability",
-        "attemptApplicationRespondConnectThroughData",
-        "successfulApplicationRespondConnectThroughData",
-        "applicationRespondConnectThroughData",
-        "attemptAuthorizedApplicationRespondConnectThroughData",
-        "successfulAuthorizedApplicationRespondConnectThroughData",
-        "authorizedApplicationRespondConnectThroughData",
-        "attemptRead", "successfulRead", "read", "specificAccessRead",
-        "attemptModify", "successfulModify", "modify", "specificAccessModify",
-        "attemptDeny", "successfulDeny", "deny",
-        "specificAccessDelete", "denyFromNetworkingAsset", "denyFromLockout"
+        'notPresent',
+        'attemptUseVulnerability',
+        'successfulUseVulnerability',
+        'useVulnerability',
+        'attemptReverseReach',
+        'successfulReverseReach',
+        'reverseReach',
+        'localConnect',
+        'networkConnectUninspected',
+        'networkConnectInspected',
+        'networkConnect',
+        'specificAccessNetworkConnect',
+        'accessNetworkAndConnections',
+        'attemptNetworkConnectFromResponse',
+        'networkConnectFromResponse',
+        'specificAccessFromLocalConnection',
+        'specificAccessFromNetworkConnection',
+        'specificAccess',
+        'bypassContainerization',
+        'authenticate',
+        'specificAccessAuthenticate',
+        'localAccess',
+        'networkAccess',
+        'fullAccess',
+        'physicalAccessAchieved',
+        'attemptUnsafeUserActivity',
+        'successfulUnsafeUserActivity',
+        'unsafeUserActivity',
+        'attackerUnsafeUserActivityCapability',
+        'attackerUnsafeUserActivityCapabilityWithReverseReach',
+        'attackerUnsafeUserActivityCapabilityWithoutReverseReach',
+        'supplyChainAuditing',
+        'bypassSupplyChainAuditing',
+        'supplyChainAuditingBypassed',
+        'attemptFullAccessFromSupplyChainCompromise',
+        'fullAccessFromSupplyChainCompromise',
+        'attemptReadFromSoftProdVulnerability',
+        'attemptModifyFromSoftProdVulnerability',
+        'attemptDenyFromSoftProdVulnerability',
+        'softwareCheck',
+        'softwareProductVulnerabilityLocalAccessAchieved',
+        'softwareProductVulnerabilityNetworkAccessAchieved',
+        'softwareProductVulnerabilityPhysicalAccessAchieved',
+        'softwareProductVulnerabilityLowPrivilegesAchieved',
+        'softwareProductVulnerabilityHighPrivilegesAchieved',
+        'softwareProductVulnerabilityUserInteractionAchieved',
+        'attemptSoftwareProductAbuse',
+        'softwareProductAbuse',
+        'readFromSoftProdVulnerability',
+        'modifyFromSoftProdVulnerability',
+        'denyFromSoftProdVulnerability',
+        'attemptApplicationRespondConnectThroughData',
+        'successfulApplicationRespondConnectThroughData',
+        'applicationRespondConnectThroughData',
+        'attemptAuthorizedApplicationRespondConnectThroughData',
+        'successfulAuthorizedApplicationRespondConnectThroughData',
+        'authorizedApplicationRespondConnectThroughData',
+        'attemptRead',
+        'successfulRead',
+        'read',
+        'specificAccessRead',
+        'attemptModify',
+        'successfulModify',
+        'modify',
+        'specificAccessModify',
+        'attemptDeny',
+        'successfulDeny',
+        'deny',
+        'specificAccessDelete',
+        'denyFromNetworkingAsset',
+        'denyFromLockout',
     ]
 
     # Make sure the nodes in the AttackGraph have the expected names and order
@@ -374,33 +377,31 @@ def test_attackgraph_according_to_corelang(corelang_lang_graph, model):
 
     # notPresent is a defense step and its children are (according to corelang):
     extected_children_of_not_present = [
-        "successfulUseVulnerability",
-        "successfulReverseReach",
-        "networkConnectFromResponse",
-        "specificAccessFromLocalConnection",
-        "specificAccessFromNetworkConnection",
-        "localAccess",
-        "networkAccess",
-        "successfulUnsafeUserActivity",
-        "fullAccessFromSupplyChainCompromise",
-        "readFromSoftProdVulnerability",
-        "modifyFromSoftProdVulnerability",
-        "denyFromSoftProdVulnerability",
-        "successfulApplicationRespondConnectThroughData",
-        "successfulAuthorizedApplicationRespondConnectThroughData",
-        "successfulRead",
-        "successfulModify",
-        "successfulDeny"
+        'successfulUseVulnerability',
+        'successfulReverseReach',
+        'networkConnectFromResponse',
+        'specificAccessFromLocalConnection',
+        'specificAccessFromNetworkConnection',
+        'localAccess',
+        'networkAccess',
+        'successfulUnsafeUserActivity',
+        'fullAccessFromSupplyChainCompromise',
+        'readFromSoftProdVulnerability',
+        'modifyFromSoftProdVulnerability',
+        'denyFromSoftProdVulnerability',
+        'successfulApplicationRespondConnectThroughData',
+        'successfulAuthorizedApplicationRespondConnectThroughData',
+        'successfulRead',
+        'successfulModify',
+        'successfulDeny',
     ]
     # Make sure children are also added for defense step notPresent
-    not_present_children = [
-        n.name for n in attack_graph.nodes[0].children
-    ]
+    not_present_children = [n.name for n in attack_graph.nodes[0].children]
     assert not_present_children == extected_children_of_not_present
+
 
 def test_attackgraph_regenerate_graph():
     """Make sure graph is regenerated"""
-    pass
 
 
 def test_attackgraph_remove_node(example_attackgraph: AttackGraph):
@@ -421,8 +422,7 @@ def test_attackgraph_remove_node(example_attackgraph: AttackGraph):
 
 
 def test_attackgraph_deepcopy(example_attackgraph: AttackGraph):
-    """
-    Try to deepcopy an attackgraph object. The nodes of the attack graph
+    """Try to deepcopy an attackgraph object. The nodes of the attack graph
     and attackers should be duplicated into new objects, while references to
     the instance model should remain the same.
     """
@@ -437,19 +437,21 @@ def test_attackgraph_deepcopy(example_attackgraph: AttackGraph):
 
     assert len(copied_attackgraph.nodes) == len(example_attackgraph.nodes)
 
-    assert list(copied_attackgraph._id_to_node.keys()) \
-        == list(example_attackgraph._id_to_node.keys())
+    assert list(copied_attackgraph._id_to_node.keys()) == list(
+        example_attackgraph._id_to_node.keys()
+    )
 
-    assert list(copied_attackgraph._id_to_attacker.keys()) \
-        == list(example_attackgraph._id_to_attacker.keys())
+    assert list(copied_attackgraph._id_to_attacker.keys()) == list(
+        example_attackgraph._id_to_attacker.keys()
+    )
 
-    assert list(copied_attackgraph._full_name_to_node.keys()) \
-        == list(example_attackgraph._full_name_to_node.keys())
+    assert list(copied_attackgraph._full_name_to_node.keys()) == list(
+        example_attackgraph._full_name_to_node.keys()
+    )
 
     assert id(copied_attackgraph.model) == id(example_attackgraph.model)
 
-    assert len(copied_attackgraph.nodes) \
-        == len(example_attackgraph.nodes)
+    assert len(copied_attackgraph.nodes) == len(example_attackgraph.nodes)
 
     for node in copied_attackgraph.nodes:
         assert node.id is not None
@@ -479,16 +481,15 @@ def test_attackgraph_deepcopy(example_attackgraph: AttackGraph):
             attack_graph_child = copied_attackgraph.get_node_by_id(child.id)
             assert id(attack_graph_child) == id(child)
 
-    assert len(copied_attackgraph.attackers) \
-        == len(example_attackgraph.attackers)
-    assert id(copied_attackgraph.attackers) \
-        != id(example_attackgraph.attackers)
+    assert len(copied_attackgraph.attackers) == len(example_attackgraph.attackers)
+    assert id(copied_attackgraph.attackers) != id(example_attackgraph.attackers)
 
     for attacker in copied_attackgraph.attackers:
-
         for entry_point in attacker.entry_points:
             assert entry_point.id
-            entry_point_in_attack_graph = copied_attackgraph.get_node_by_id(entry_point.id)
+            entry_point_in_attack_graph = copied_attackgraph.get_node_by_id(
+                entry_point.id
+            )
             assert entry_point_in_attack_graph
             assert entry_point == entry_point_in_attack_graph
             assert id(entry_point) == id(entry_point_in_attack_graph)
@@ -501,9 +502,7 @@ def test_attackgraph_deepcopy(example_attackgraph: AttackGraph):
 
 
 def test_attackgraph_deepcopy_attackers(example_attackgraph: AttackGraph):
-    """
-    Make sure attackers entry points and reached steps are copied correctly
-    """
+    """Make sure attackers entry points and reached steps are copied correctly"""
     example_attackgraph.attach_attackers()
 
     original_attacker = example_attackgraph.attackers[0]
@@ -535,9 +534,7 @@ def test_attackgraph_deepcopy_attackers(example_attackgraph: AttackGraph):
 
 
 def test_deepcopy_memo_test(example_attackgraph: AttackGraph):
-    """
-    Make sure memo is filled up with expected number of objects
-    """
+    """Make sure memo is filled up with expected number of objects"""
     example_attackgraph.attach_attackers()
     memo: dict = {}
 
@@ -553,7 +550,11 @@ def test_deepcopy_memo_test(example_attackgraph: AttackGraph):
 
     # Make sure memo stored all of the attackers
     memo_attackers = [o for o in memo.values() if isinstance(o, Attacker)]
-    assert len(copied_attackers) == len(memo_attackers) == len(example_attackgraph.attackers)
+    assert (
+        len(copied_attackers)
+        == len(memo_attackers)
+        == len(example_attackgraph.attackers)
+    )
 
     # Make sure memo didn't store any new nodes
     memo_nodes = [o for o in memo.values() if isinstance(o, AttackGraphNode)]

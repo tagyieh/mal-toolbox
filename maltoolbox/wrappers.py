@@ -4,24 +4,22 @@ import logging
 import sys
 import zipfile
 
-from maltoolbox.model import Model
-from maltoolbox.language import LanguageGraph, LanguageClassesFactory
-from maltoolbox.attackgraph import AttackGraph
-from maltoolbox.attackgraph.analyzers.apriori import (
-    calculate_viability_and_necessity
-)
-from maltoolbox.exceptions import AttackGraphStepExpressionError
 from maltoolbox import log_configs
-
+from maltoolbox.attackgraph import AttackGraph
+from maltoolbox.attackgraph.analyzers.apriori import calculate_viability_and_necessity
+from maltoolbox.exceptions import AttackGraphStepExpressionError
+from maltoolbox.language import LanguageClassesFactory, LanguageGraph
+from maltoolbox.model import Model
 
 logger = logging.getLogger(__name__)
 
+
 def create_attack_graph(
-        lang_file: str,
-        model_file: str,
-        attach_attackers=True,
-        calc_viability_and_necessity=True
-    ) -> AttackGraph:
+    lang_file: str,
+    model_file: str,
+    attach_attackers=True,
+    calc_viability_and_necessity=True,
+) -> AttackGraph:
     """Create and return an attack graph
 
     Args:
@@ -29,6 +27,7 @@ def create_attack_graph(
     model_file                      - path to model file (yaml or json)
     attach_attackers                - whether to run attach_attackers or not
     calc_viability_and_necessity    - whether run apriori calculations or not
+
     """
     try:
         lang_graph = LanguageGraph.from_mar_archive(lang_file)
