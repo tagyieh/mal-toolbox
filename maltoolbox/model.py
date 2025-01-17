@@ -831,7 +831,6 @@ class Model():
             association = assoc_type_class()
 
             for field, targets in assoc_fields.items():
-                targets = targets if isinstance(targets, list) else [targets]
                 setattr(
                     association,
                     field,
