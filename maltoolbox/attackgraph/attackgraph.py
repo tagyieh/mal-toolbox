@@ -5,6 +5,7 @@ from __future__ import annotations
 import logging
 import json
 
+from copy import deepcopy
 from functools import cache
 from itertools import chain
 from typing import TYPE_CHECKING
@@ -388,7 +389,9 @@ class AttackGraph():
                     )
 
                     accumulated_target_assets.add(
-                        fset := frozenset(additional_assets.difference(additional_assets))
+                        fset := frozenset(
+                            additional_assets.difference(accumulated_target_assets)
+                        )
                     )
 
                     if fset:
