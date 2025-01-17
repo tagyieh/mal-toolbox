@@ -31,12 +31,12 @@ class AttackGraphStepExpressionError(AttackGraphException):
 
 
 class ModelException(MalToolboxException):
-    """Base Exception for all Model related exceptions"""
+    """Base Exception for all Model related exceptions."""
 
 
 class ModelAssociationException(ModelException):
-    """Exception related to associations in Model"""
+    """Exception related to associations in Model."""
 
 
 class DuplicateModelAssociationError(ModelException):
-    """Associations should be unique as part of Model"""
+    """Associations should be unique as part of Model."""

@@ -1,4 +1,4 @@
-"""Unit tests for AttackGraph functionality"""
+"""Unit tests for AttackGraph functionality."""
 
 from conftest import path_testdata
 
@@ -7,8 +7,8 @@ from maltoolbox.model import Model
 from maltoolbox.translators import securicad
 
 
-def test_securicad_translator(corelang_lang_graph):
-    """Test that we can load old securiCAD models"""
+def test_securicad_translator(corelang_lang_graph) -> None:
+    """Test that we can load old securiCAD models."""
     scad_file = path_testdata('example_model.sCAD')
     lang_classes_factory = LanguageClassesFactory(corelang_lang_graph)
     scad_model = securicad.load_model_from_scad_archive(

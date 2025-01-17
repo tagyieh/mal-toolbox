@@ -1,4 +1,4 @@
-"""Command-line interface for MAL toolbox operations
+"""Command-line interface for MAL toolbox operations.
 
 Usage:
     maltoolbox attack-graph generate [options] <model> <lang_file>
@@ -37,7 +37,7 @@ logger = logging.getLogger(__name__)
 
 
 def generate_attack_graph(model_file: str, lang_file: str, send_to_neo4j: bool) -> None:
-    """Create an attack graph and optionally send to neo4j
+    """Create an attack graph and optionally send to neo4j.
 
     Args:
     model_file      - path to the model file
@@ -71,9 +71,9 @@ def generate_attack_graph(model_file: str, lang_file: str, send_to_neo4j: bool) 
 
 
 def compile(lang_file: str, output_file: str) -> None:
-    """Compile language and dump into output file"""
+    """Compile language and dump into output file."""
     compiler = MalCompiler()
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(compiler.compile(lang_file), f, indent=2)
 
 

@@ -1,4 +1,4 @@
-"""Tests for analyzers"""
+"""Tests for analyzers."""
 
 from maltoolbox.attackgraph import AttackGraphNode
 from maltoolbox.attackgraph.analyzers.apriori import (
@@ -9,36 +9,36 @@ from maltoolbox.attackgraph.analyzers.apriori import (
 # TODO: Add apriori analyzer test implementations
 
 
-def test_analyzers_apriori_propagate_viability_from_node():
-    """See if viability is propagated correctly"""
+def test_analyzers_apriori_propagate_viability_from_node() -> None:
+    """See if viability is propagated correctly."""
 
 
-def test_analyzers_apriori_propagate_necessity_from_node():
-    """See if necessity is propagated correctly"""
+def test_analyzers_apriori_propagate_necessity_from_node() -> None:
+    """See if necessity is propagated correctly."""
 
 
-def test_analyzers_apriori_evaluate_viability():
+def test_analyzers_apriori_evaluate_viability() -> None:
     pass
 
 
-def test_analyzers_apriori_evaluate_necessity():
+def test_analyzers_apriori_evaluate_necessity() -> None:
     pass
 
 
-def test_analyzers_apriori_evaluate_viability_and_necessity():
+def test_analyzers_apriori_evaluate_viability_and_necessity() -> None:
     pass
 
 
-def test_analyzers_apriori_calculate_viability_and_necessity():
+def test_analyzers_apriori_calculate_viability_and_necessity() -> None:
     pass
 
 
-def test_analyzers_apriori_prune_unviable_and_unnecessary_nodes():
+def test_analyzers_apriori_prune_unviable_and_unnecessary_nodes() -> None:
     pass
 
 
-def test_analyzers_apriori_propagate_viability_from_unviable_node():
-    """Create a graph from nodes
+def test_analyzers_apriori_propagate_viability_from_unviable_node() -> None:
+    r"""Create a graph from nodes.
 
         node1
         /    \
@@ -77,7 +77,5 @@ def test_analyzers_apriori_propagate_viability_from_unviable_node():
     node1.is_viable = False
     unviable_nodes = propagate_viability_from_unviable_node(node1)
     unviable_node_names = {node.name for node in unviable_nodes}
-    expected_unviable_node_names = set(
-        [node2.name, node3.name, node4.name, node5.name, node6.name]
-    )
+    expected_unviable_node_names = {node2.name, node3.name, node4.name, node5.name, node6.name}
     assert unviable_node_names == expected_unviable_node_names

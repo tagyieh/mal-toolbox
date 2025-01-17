@@ -1,12 +1,12 @@
-"""MAL-Toolbox Neo4j Ingestor Module"""
+"""MAL-Toolbox Neo4j Ingestor Module."""
 # mypy: ignore-errors
 
 import logging
 
 from py2neo import Graph, Node, Relationship, Subgraph
 
-from ..language import LanguageClassesFactory, LanguageGraph
-from ..model import AttackerAttachment, Model
+from maltoolbox.language import LanguageClassesFactory, LanguageGraph
+from maltoolbox.model import AttackerAttachment, Model
 
 logger = logging.getLogger(__name__)
 
@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 def ingest_attack_graph(
     graph, uri: str, username: str, password: str, dbname: str, delete: bool = False
 ) -> None:
-    """Ingest an attack graph into a neo4j database
+    """Ingest an attack graph into a neo4j database.
 
     Arguments:
     graph                - the attackgraph provided by the atkgraph.py module.
@@ -43,14 +43,11 @@ def ingest_attack_graph(
             is_necessary=str(node.is_necessary),
             is_viable=str(node.is_viable),
             compromised_by=str(node_dict['compromised_by']),
-            defense_status=node_dict['defense_status']
-            if 'defense_status' in node_dict
-            else 'N/A',
+            defense_status=node_dict.get('defense_status', 'N/A'),
         )
 
     for node in graph.nodes:
-        for child in node.children:
-            rels.append(Relationship(nodes[node.id], nodes[child.id]))
+        rels.extend(Relationship(nodes[node.id], nodes[child.id]) for child in node.children)
 
     subgraph = Subgraph(list(nodes.values()), rels)
 
@@ -62,7 +59,7 @@ def ingest_attack_graph(
 def ingest_model(
     model, uri: str, username: str, password: str, dbname: str, delete: bool = False
 ) -> None:
-    """Ingest an instance model graph into a Neo4J database
+    """Ingest an instance model graph into a Neo4J database.
 
     Arguments:
     model                - the instance model dictionary as provided by the model.py module
@@ -95,20 +92,7 @@ def ingest_model(
         secondElements = getattr(assoc, secondElementName)
         for first_asset in firstElements:
             for second_asset in secondElements:
-                rels.append(
-                    Relationship(
-                        nodes[str(first_asset.id)],
-                        str(firstElementName),
-                        nodes[str(second_asset.id)],
-                    )
-                )
-                rels.append(
-                    Relationship(
-                        nodes[str(second_asset.id)],
-                        str(secondElementName),
-                        nodes[str(first_asset.id)],
-                    )
-                )
+                rels.extend((Relationship(nodes[str(first_asset.id)], str(firstElementName), nodes[str(second_asset.id)]), Relationship(nodes[str(second_asset.id)], str(secondElementName), nodes[str(first_asset.id)])))
 
     subgraph = Subgraph(list(nodes.values()), rels)
 
@@ -125,7 +109,7 @@ def get_model(
     lang_graph: LanguageGraph,
     lang_classes_factory: LanguageClassesFactory,
 ) -> Model:
-    """Load a model from Neo4j"""
+    """Load a model from Neo4j."""
     g = Graph(uri=uri, user=username, password=password, name=dbname)
 
     instance_model = Model('Neo4j imported model', lang_classes_factory)
@@ -162,8 +146,8 @@ def get_model(
     ).data()
 
     for assoc in assocs_results:
-        left_field = list(assoc['r1'].types())[0]
-        right_field = list(assoc['r2'].types())[0]
+        left_field = next(iter(assoc['r1'].types()))
+        right_field = next(iter(assoc['r2'].types()))
         left_asset = dict(assoc['a'])
         right_asset = dict(assoc['b'])
 

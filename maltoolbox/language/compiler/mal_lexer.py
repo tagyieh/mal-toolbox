@@ -2791,7 +2791,7 @@ class malLexer(Lexer):
 
     grammarFileName = 'mal.g4'
 
-    def __init__(self, input=None, output: TextIO = sys.stdout):
+    def __init__(self, input=None, output: TextIO = sys.stdout) -> None:
         super().__init__(input, output)
         self.checkVersion('4.13.1')
         self._interp = LexerATNSimulator(

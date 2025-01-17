@@ -3,8 +3,8 @@ import logging
 
 import yaml
 
-from ..language import LanguageClassesFactory
-from ..model import AttackerAttachment, Model
+from maltoolbox.language import LanguageClassesFactory
+from maltoolbox.model import AttackerAttachment, Model
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +121,7 @@ def load_model_from_version_0_0_39(
         return _process_model(model_dict, lang_classes_factory)
 
     logger.info(f'Loading model from {filename} file.')
-    if filename.endswith('.yml') or filename.endswith('.yaml'):
+    if filename.endswith(('.yml', '.yaml')):
         return load_from_yaml(filename, lang_classes_factory)
     if filename.endswith('.json'):
         return load_from_json(filename, lang_classes_factory)

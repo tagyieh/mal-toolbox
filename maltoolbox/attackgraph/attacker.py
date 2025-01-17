@@ -1,4 +1,4 @@
-"""MAL-Toolbox Attack Graph Attacker Class"""
+"""MAL-Toolbox Attack Graph Attacker Class."""
 
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ class Attacker:
         return str(self.to_dict())
 
     def __deepcopy__(self, memo) -> Attacker:
-        """Deep copy an Attacker"""
+        """Deep copy an Attacker."""
         # Check if the object is already in the memo dictionary
         if id(self) in memo:
             return memo[id(self)]

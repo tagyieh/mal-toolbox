@@ -1,4 +1,4 @@
-"""Unit tests for AttackGraph functionality"""
+"""Unit tests for AttackGraph functionality."""
 
 from maltoolbox.attackgraph import Attacker, AttackGraph, AttackGraphNode
 from maltoolbox.attackgraph.query import (
@@ -6,8 +6,8 @@ from maltoolbox.attackgraph.query import (
 )
 
 
-def test_query_is_node_traversable_by_attacker():
-    """Make sure it returns True or False when expected"""
+def test_query_is_node_traversable_by_attacker() -> None:
+    """Make sure it returns True or False when expected."""
     # An attacker with no meaningful data
     attacker = Attacker(name='Test Attacker', entry_points=[], reached_attack_steps=[])
 

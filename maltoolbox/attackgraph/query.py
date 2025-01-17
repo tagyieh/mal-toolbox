@@ -1,4 +1,4 @@
-"""MAL-Toolbox Attack Graph Query Submodule
+"""MAL-Toolbox Attack Graph Query Submodule.
 
 This submodule contains functions that analyze the information present in the
 attack graph, but do not alter the structure or nodes in any way.
@@ -9,10 +9,8 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING
 
-from .attackgraph import Attacker, AttackGraph
-
 if TYPE_CHECKING:
-    from .attackgraph import AttackGraphNode
+    from .attackgraph import Attacker, AttackGraph, AttackGraphNode
 
 logger = logging.getLogger(__name__)
 

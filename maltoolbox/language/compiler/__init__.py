@@ -2,7 +2,6 @@
 # mypy: ignore-errors
 
 import os
-from typing import Optional
 
 from antlr4 import CommonTokenStream, FileStream
 
@@ -12,7 +11,7 @@ from .mal_visitor import malVisitor
 
 
 class MalCompiler:
-    def __init__(self):
+    def __init__(self) -> None:
         self.path = None
         self.current_file = None
 

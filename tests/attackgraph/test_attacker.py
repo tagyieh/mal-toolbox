@@ -1,12 +1,12 @@
-"""Unit tests for AttackGraphNode functionality"""
+"""Unit tests for AttackGraphNode functionality."""
 
 from maltoolbox.attackgraph.attacker import Attacker
 from maltoolbox.attackgraph.attackgraph import AttackGraph
 from maltoolbox.attackgraph.node import AttackGraphNode
 
 
-def test_attacker_to_dict():
-    """Test Attacker to dict conversion"""
+def test_attacker_to_dict() -> None:
+    """Test Attacker to dict conversion."""
     node1 = AttackGraphNode(type='or', name='node1')
     attacker = Attacker('Test Attacker', [], [node1])
     assert attacker.to_dict() == {
@@ -17,8 +17,8 @@ def test_attacker_to_dict():
     }
 
 
-def test_attacker_compromise():
-    """Attack a node and see expected behavior"""
+def test_attacker_compromise() -> None:
+    """Attack a node and see expected behavior."""
     node1 = AttackGraphNode(type='or', name='node1')
     attacker = Attacker('Test Attacker', [], [])
     assert not attacker.entry_points
@@ -37,8 +37,8 @@ def test_attacker_compromise():
     assert node1.compromised_by == [attacker]
 
 
-def test_attacker_undo_compromise():
-    """Make sure undo compromise removes attacker/node"""
+def test_attacker_undo_compromise() -> None:
+    """Make sure undo compromise removes attacker/node."""
     node1 = AttackGraphNode(type='or', name='node1')
     attacker = Attacker('attacker1', [], [])
     attack_graph = AttackGraph()

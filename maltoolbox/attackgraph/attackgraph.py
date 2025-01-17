@@ -1,4 +1,4 @@
-"""MAL-Toolbox Attack Graph Module"""
+"""MAL-Toolbox Attack Graph Module."""
 
 from __future__ import annotations
 
@@ -7,20 +7,21 @@ import json
 import logging
 from typing import TYPE_CHECKING
 
-from ..exceptions import AttackGraphException, AttackGraphStepExpressionError
-from ..file_utils import (
+from maltoolbox.exceptions import AttackGraphException, AttackGraphStepExpressionError
+from maltoolbox.file_utils import (
     load_dict_from_json_file,
     load_dict_from_yaml_file,
     save_dict_to_file,
 )
-from ..model import Model
+
 from .attacker import Attacker
 from .node import AttackGraphNode
 
 if TYPE_CHECKING:
     from typing import Any
 
-    from ..language import LanguageGraph
+    from maltoolbox.language import LanguageGraph
+    from maltoolbox.model import Model
 
 logger = logging.getLogger(__name__)
 
@@ -173,17 +174,21 @@ def _process_step_expression(
             for asset in new_target_assets:
                 lang_graph_asset = lang_graph.get_asset_by_name(asset.type)
                 if not lang_graph_asset:
+                    msg = f'Failed to find asset "{asset.type}" in the ' 'language graph.'
                     raise LookupError(
-                        f'Failed to find asset "{asset.type}" in the ' 'language graph.'
+                        msg
                     )
                 lang_graph_subtype_asset = lang_graph.get_asset_by_name(
                     step_expression['subType']
                 )
                 if not lang_graph_subtype_asset:
-                    raise LookupError(
+                    msg = (
                         'Failed to find asset '
                         f'"{step_expression["subType"]}" in the '
                         'language graph.'
+                    )
+                    raise LookupError(
+                        msg
                     )
                 if lang_graph_asset.is_subasset_of(lang_graph_subtype_asset):
                     selected_new_target_assets.append(asset)
@@ -206,9 +211,9 @@ def _process_step_expression(
 
 
 class AttackGraph:
-    """Graph representation of attack steps"""
+    """Graph representation of attack steps."""
 
-    def __init__(self, lang_graph=None, model: Model | None = None):
+    def __init__(self, lang_graph=None, model: Model | None = None) -> None:
         self.nodes: list[AttackGraphNode] = []
         self.attackers: list[Attacker] = []
         # Dictionaries used in optimization to get nodes and attackers by id
@@ -228,7 +233,7 @@ class AttackGraph:
         return f'AttackGraph({len(self.nodes)} nodes)'
 
     def _to_dict(self) -> dict:
-        """Convert AttackGraph to dict"""
+        """Convert AttackGraph to dict."""
         serialized_attack_steps = {}
         serialized_attackers = {}
         for ag_node in self.nodes:
@@ -284,7 +289,7 @@ class AttackGraph:
         return copied_attackgraph
 
     def save_to_file(self, filename: str) -> None:
-        """Save to json/yml depending on extension"""
+        """Save to json/yml depending on extension."""
         logger.debug('Save attack graph to file "%s".', filename)
         return save_dict_to_file(filename, self._to_dict())
 
@@ -295,7 +300,7 @@ class AttackGraph:
         """Create AttackGraph from dict
         Args:
         serialized_object   - AttackGraph in dict format
-        model               - Optional Model to add connections to
+        model               - Optional Model to add connections to.
         """
         attack_graph = AttackGraph()
         attack_graph.model = model
@@ -303,7 +308,7 @@ class AttackGraph:
         serialized_attackers = serialized_object['attackers']
 
         # Create all of the nodes in the imported attack graph.
-        for node_full_name, node_dict in serialized_attack_steps.items():
+        for node_dict in serialized_attack_steps.values():
             # Recreate asset links if model is available.
             node_asset = None
             if model and 'asset' in node_dict:
@@ -353,14 +358,14 @@ class AttackGraph:
             ag_node.mitre_info = (
                 str(node_dict['mitre_info']) if 'mitre_info' in node_dict else None
             )
-            ag_node.tags = node_dict['tags'] if 'tags' in node_dict else []
+            ag_node.tags = node_dict.get('tags', [])
             ag_node.extras = node_dict.get('extras', {})
 
             # Add AttackGraphNode to AttackGraph
             attack_graph.add_node(ag_node, node_id=node_dict['id'])
 
         # Re-establish links between nodes.
-        for node_full_name, node_dict in serialized_attack_steps.items():
+        for node_dict in serialized_attack_steps.values():
             _ag_node = attack_graph.get_node_by_id(node_dict['id'])
             if not isinstance(_ag_node, AttackGraphNode):
                 msg = (
@@ -391,7 +396,7 @@ class AttackGraph:
                     raise LookupError(msg % parent_id)
                 _ag_node.parents.append(parent)
 
-        for attacker_name, attacker in serialized_attackers.items():
+        for attacker in serialized_attackers.values():
             ag_attacker = Attacker(
                 name=attacker['name'], entry_points=[], reached_attack_steps=[]
             )
@@ -401,7 +406,7 @@ class AttackGraph:
                 entry_points=attacker['entry_points'].keys(),
                 reached_attack_steps=[
                     int(node_id)  # Convert to int since they can be strings
-                    for node_id in attacker['reached_attack_steps'].keys()
+                    for node_id in attacker['reached_attack_steps']
                 ],
             )
 
@@ -409,7 +414,7 @@ class AttackGraph:
 
     @classmethod
     def load_from_file(cls, filename: str, model: Model | None = None) -> AttackGraph:
-        """Create from json or yaml file depending on file extension"""
+        """Create from json or yaml file depending on file extension."""
         if model is not None:
             logger.debug(
                 'Load attack graph from file "%s" with ' 'model "%s".',
@@ -424,7 +429,8 @@ class AttackGraph:
         elif filename.endswith('.json'):
             serialized_attack_graph = load_dict_from_json_file(filename)
         else:
-            raise ValueError('Unknown file extension, expected json/yml/yaml')
+            msg = 'Unknown file extension, expected json/yml/yaml'
+            raise ValueError(msg)
         return cls._from_dict(serialized_attack_graph, model=model)
 
     def get_node_by_id(self, node_id: int) -> AttackGraphNode | None:
@@ -557,9 +563,7 @@ class AttackGraph:
                         existence_status = target_assets != []
 
                 mitre_info = (
-                    attack_step_attribs['meta']['mitre']
-                    if 'mitre' in attack_step_attribs['meta']
-                    else None
+                    attack_step_attribs['meta'].get('mitre', None)
                 )
                 ag_node = AttackGraphNode(
                     type=attack_step_attribs['type'],
@@ -632,7 +636,7 @@ class AttackGraph:
         Arguments:
         node    - the node to add
         node_id - the id to assign to this node, usually used when loading
-                  an attack graph from a file
+                  an attack graph from a file.
         """
         if logger.isEnabledFor(logging.DEBUG):
             # Avoid running json.dumps when not in debug
@@ -642,7 +646,8 @@ class AttackGraph:
             )
 
         if node.id in self._id_to_node:
-            raise ValueError(f'Node index {node_id} already in use.')
+            msg = f'Node index {node_id} already in use.'
+            raise ValueError(msg)
 
         node.id = node_id if node_id is not None else self.next_node_id
         self.next_node_id = max(node.id + 1, self.next_node_id)
@@ -654,7 +659,7 @@ class AttackGraph:
     def remove_node(self, node: AttackGraphNode) -> None:
         """Remove node from attack graph
         Arguments:
-        node    - the node we wish to remove from the attack graph
+        node    - the node we wish to remove from the attack graph.
         """
         if logger.isEnabledFor(logging.DEBUG):
             # Avoid running json.dumps when not in debug
@@ -666,7 +671,8 @@ class AttackGraph:
         self.nodes.remove(node)
 
         if not isinstance(node.id, int):
-            raise ValueError('Invalid node id.')
+            msg = 'Invalid node id.'
+            raise ValueError(msg)
         del self._id_to_node[node.id]
         del self._full_name_to_node[node.full_name]
 
@@ -674,9 +680,9 @@ class AttackGraph:
         self,
         attacker: Attacker,
         attacker_id: int | None = None,
-        entry_points: list[int] = [],
-        reached_attack_steps: list[int] = [],
-    ):
+        entry_points: list[int] | None = None,
+        reached_attack_steps: list[int] | None = None,
+    ) -> None:
         """Add an attacker to the graph
         Arguments:
         attacker                - the attacker to add
@@ -686,8 +692,12 @@ class AttackGraph:
         entry_points            - list of attack step ids that serve as entry
                                   points for the attacker
         reached_attack_steps    - list of ids of the attack steps that the
-                                  attacker has reached
+                                  attacker has reached.
         """
+        if reached_attack_steps is None:
+            reached_attack_steps = []
+        if entry_points is None:
+            entry_points = []
         if logger.isEnabledFor(logging.DEBUG):
             # Avoid running json.dumps when not in debug
             if attacker_id is not None:
@@ -699,7 +709,8 @@ class AttackGraph:
 
         attacker.id = attacker_id or self.next_attacker_id
         if attacker.id in self._id_to_attacker:
-            raise ValueError(f'Attacker index {attacker_id} already in use.')
+            msg = f'Attacker index {attacker_id} already in use.'
+            raise ValueError(msg)
 
         self.next_attacker_id = max(attacker.id + 1, self.next_attacker_id)
         for node_id in reached_attack_steps:
@@ -721,10 +732,10 @@ class AttackGraph:
         self.attackers.append(attacker)
         self._id_to_attacker[attacker.id] = attacker
 
-    def remove_attacker(self, attacker: Attacker):
+    def remove_attacker(self, attacker: Attacker) -> None:
         """Remove attacker from attack graph
         Arguments:
-        attacker    - the attacker we wish to remove from the attack graph
+        attacker    - the attacker we wish to remove from the attack graph.
         """
         if logger.isEnabledFor(logging.DEBUG):
             # Avoid running json.dumps when not in debug
@@ -733,5 +744,6 @@ class AttackGraph:
             attacker.undo_compromise(node)
         self.attackers.remove(attacker)
         if not isinstance(attacker.id, int):
-            raise ValueError('Invalid attacker id.')
+            msg = 'Invalid attacker id.'
+            raise ValueError(msg)
         del self._id_to_attacker[attacker.id]

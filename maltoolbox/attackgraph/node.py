@@ -1,17 +1,18 @@
-"""MAL-Toolbox Attack Graph Node Dataclass"""
+"""MAL-Toolbox Attack Graph Node Dataclass."""
 
 from __future__ import annotations
 
 import copy
 from dataclasses import dataclass, field
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from . import Attacker
+if TYPE_CHECKING:
+    from . import Attacker
 
 
 @dataclass
 class AttackGraphNode:
-    """Node part of AttackGraph"""
+    """Node part of AttackGraph."""
 
     type: str
     name: str
@@ -33,7 +34,7 @@ class AttackGraphNode:
     extras: dict = field(default_factory=dict)
 
     def to_dict(self) -> dict:
-        """Convert node to dictionary"""
+        """Convert node to dictionary."""
         node_dict: dict = {
             'id': self.id,
             'type': self.type,
@@ -71,7 +72,7 @@ class AttackGraphNode:
         return str(self.to_dict())
 
     def __deepcopy__(self, memo) -> AttackGraphNode:
-        """Deep copy an attackgraph node
+        """Deep copy an attackgraph node.
 
         The deepcopy will copy over node specific information, such as type,
         name, etc., but it will not copy attack graph relations such as

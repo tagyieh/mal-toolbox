@@ -1,4 +1,4 @@
-"""MAL-Toolbox Attack Graph Apriori Analyzer Submodule
+"""MAL-Toolbox Attack Graph Apriori Analyzer Submodule.
 
 This submodule contains analyzers that are relevant before attackers are even
 connected to the attack graph.
@@ -13,9 +13,11 @@ Currently these are:
 from __future__ import annotations
 
 import logging
+from typing import TYPE_CHECKING
 
-from ..attackgraph import AttackGraph
-from ..node import AttackGraphNode
+if TYPE_CHECKING:
+    from maltoolbox.attackgraph.attackgraph import AttackGraph
+    from maltoolbox.attackgraph.node import AttackGraphNode
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +25,7 @@ logger = logging.getLogger(__name__)
 def propagate_viability_from_node(node: AttackGraphNode) -> None:
     """Arguments:
     node        - the attack graph node from which to propagate the viable
-                  status
+                  status.
 
     """
     logger.debug(
@@ -48,7 +50,7 @@ def propagate_viability_from_node(node: AttackGraphNode) -> None:
 def propagate_necessity_from_node(node: AttackGraphNode) -> None:
     """Arguments:
     node        - the attack graph node from which to propagate the necessary
-                  status
+                  status.
 
     """
     logger.debug(
@@ -59,7 +61,7 @@ def propagate_necessity_from_node(node: AttackGraphNode) -> None:
     )
 
     if node.ttc and 'name' in node.ttc:
-        if node.ttc['name'] not in ['Enabled', 'Disabled']:
+        if node.ttc['name'] not in {'Enabled', 'Disabled'}:
             # Do not propagate unnecessary state from nodes that have a TTC
             # probability distribution associated with them.
             # TODO: Evaluate this more carefully, how do we want to have TTCs
@@ -173,7 +175,7 @@ def calculate_viability_and_necessity(graph: AttackGraph) -> None:
 
     """
     for node in graph.nodes:
-        if node.type in ['exist', 'notExist', 'defense']:
+        if node.type in {'exist', 'notExist', 'defense'}:
             evaluate_viability_and_necessity(node)
             if not node.is_viable:
                 propagate_viability_from_node(node)
@@ -188,7 +190,7 @@ def prune_unviable_and_unnecessary_nodes(graph: AttackGraph) -> None:
 
     """
     for node in graph.nodes:
-        if (node.type == 'or' or node.type == 'and') and (
+        if (node.type in {'or', 'and'}) and (
             not node.is_viable or not node.is_necessary
         ):
             graph.remove_node(node)
@@ -223,7 +225,7 @@ def propagate_viability_from_unviable_node(
         f' on viable node {unviable_node.full_name}'
     )
 
-    if unviable_node.type in ('and', 'or'):
+    if unviable_node.type in {'and', 'or'}:
         attack_steps_made_unviable.append(unviable_node)
 
     for child in unviable_node.children:

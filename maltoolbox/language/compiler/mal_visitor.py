@@ -11,7 +11,7 @@ from .mal_parser import malParser
 
 
 class malVisitor(ParseTreeVisitor):
-    def __init__(self, compiler, *args, **kwargs):
+    def __init__(self, compiler, *args, **kwargs) -> None:
         self.compiler = compiler
         self.current_file = compiler.current_file  # for debug purposes
 
@@ -109,7 +109,7 @@ class malVisitor(ParseTreeVisitor):
 
         return step
 
-    def visitSteptype(self, ctx):
+    def visitSteptype(self, ctx) -> str | None:
         return (
             'or'
             if ctx.OR()
@@ -153,9 +153,7 @@ class malVisitor(ParseTreeVisitor):
         return {key: True}
 
     def visitTtc(self, ctx):
-        ret = self.visit(ctx.ttcexpr())
-
-        return ret
+        return self.visit(ctx.ttcexpr())
 
     def visitTtcexpr(self, ctx):
         if len(terms := ctx.ttcterm()) == 1:
@@ -301,7 +299,7 @@ class malVisitor(ParseTreeVisitor):
 
         return ret
 
-    def _resolve_part_ID_type(self, ctx):
+    def _resolve_part_ID_type(self, ctx) -> str:
         pctx = ctx.parentCtx
 
         # Traverse up the tree until we find the parent of the topmost expr
@@ -340,7 +338,7 @@ class malVisitor(ParseTreeVisitor):
     def visitType(self, ctx):
         return ctx.ID().getText()
 
-    def visitSetop(self, ctx):
+    def visitSetop(self, ctx) -> str | None:
         return (
             'union'
             if ctx.UNION()
@@ -352,9 +350,7 @@ class malVisitor(ParseTreeVisitor):
         )
 
     def visitAssociations(self, ctx):
-        associations = []
-        for assoc in ctx.association():
-            associations.append(self.visit(assoc))
+        associations = [self.visit(assoc) for assoc in ctx.association()]
 
         return ('associations', associations)
 
@@ -381,7 +377,7 @@ class malVisitor(ParseTreeVisitor):
         self._post_process_multitudes(association)
         return association
 
-    def _post_process_multitudes(self, association):
+    def _post_process_multitudes(self, association) -> None:
         mult_keys = [
             # start the multatoms from right to left to make sure the rules
             # below get applied cleanly

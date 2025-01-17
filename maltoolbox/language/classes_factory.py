@@ -1,5 +1,5 @@
 """MAL-Toolbox Language Classes Factory Module
-Uses python_jsonschema_objects to generate python classes from a MAL language
+Uses python_jsonschema_objects to generate python classes from a MAL language.
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 class LanguageClassesFactory:
-    def __init__(self, lang_graph: LanguageGraph):
+    def __init__(self, lang_graph: LanguageGraph) -> None:
         self.lang_graph: LanguageGraph = lang_graph
         self.json_schema: dict = {}
         self._create_classes()
@@ -83,7 +83,7 @@ class LanguageClassesFactory:
             create_association_field(assoc, assoc_json_entry, 'right')
             return assoc_json_entry
 
-        def create_association_with_subentries(assoc: SchemaGeneratedClass):
+        def create_association_with_subentries(assoc: SchemaGeneratedClass) -> None:
             if (
                 assoc.name
                 not in self.json_schema['definitions']['LanguageAssociation'][
@@ -239,21 +239,27 @@ class LanguageClassesFactory:
             'definitions'
         ]
         if assoc_name not in lang_assocs_entries:
+            msg = (
+                f'Failed to find "{assoc_name}" association in the language json '
+                'schema.'
+            )
             raise LookupError(
-                'Failed to find "%s" association in the language json '
-                'schema.' % assoc_name
+                msg
             )
         assoc_entry = lang_assocs_entries[assoc_name]
         # If the association has a oneOf property it should always have more
         # than just one alternative, but check just in case
         if 'definitions' in assoc_entry and len(assoc_entry['definitions']) > 1:
-            full_name = '%s_%s_%s' % (assoc_name, left_asset, right_asset)
-            full_name_flipped = '%s_%s_%s' % (assoc_name, right_asset, left_asset)
+            full_name = f'{assoc_name}_{left_asset}_{right_asset}'
+            full_name_flipped = f'{assoc_name}_{right_asset}_{left_asset}'
             if full_name not in assoc_entry['definitions']:
                 if full_name_flipped not in assoc_entry['definitions']:
+                    msg = (
+                        f'Failed to find "{full_name}" or "{full_name_flipped}" association in the '
+                        'language json schema.'
+                    )
                     raise LookupError(
-                        'Failed to find "%s" or "%s" association in the '
-                        'language json schema.' % (full_name, full_name_flipped)
+                        msg
                     )
                 return full_name_flipped
             return full_name

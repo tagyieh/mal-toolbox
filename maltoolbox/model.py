@@ -1,4 +1,4 @@
-"""MAL-Toolbox Model Module"""
+"""MAL-Toolbox Model Module."""
 
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class AttackerAttachment:
-    """Used to attach attackers to attack step entry points of assets"""
+    """Used to attach attackers to attack step entry points of assets."""
 
     id: int | None = None
     name: str | None = None
@@ -58,8 +58,8 @@ class AttackerAttachment:
             (ep_tuple for ep_tuple in self.entry_points if ep_tuple[0] == asset), None
         )
 
-    def add_entry_point(self, asset: SchemaGeneratedClass, attackstep_name: str):
-        """Add an entry point to an AttackerAttachment
+    def add_entry_point(self, asset: SchemaGeneratedClass, attackstep_name: str) -> None:
+        """Add an entry point to an AttackerAttachment.
 
         self.entry_points contain tuples, first element of each tuple
         is an asset, second element is a list of attack step names that
@@ -93,8 +93,8 @@ class AttackerAttachment:
             # point
             self.entry_points.append((asset, [attackstep_name]))
 
-    def remove_entry_point(self, asset: SchemaGeneratedClass, attackstep_name: str):
-        """Remove an entry point from an AttackerAttachment if it exists
+    def remove_entry_point(self, asset: SchemaGeneratedClass, attackstep_name: str) -> None:
+        """Remove an entry point from an AttackerAttachment if it exists.
 
         Arguments:
         asset           - the asset to remove the entry point from
@@ -129,7 +129,7 @@ class AttackerAttachment:
 
 
 class Model:
-    """An implementation of a MAL language with assets and associations"""
+    """An implementation of a MAL language with assets and associations."""
 
     next_id: int = 0
 
@@ -141,7 +141,7 @@ class Model:
         name: str,
         lang_classes_factory: LanguageClassesFactory,
         mt_version: str = __version__,
-    ):
+    ) -> None:
         self.name = name
         self.assets: list[SchemaGeneratedClass] = []
         self.associations: list[SchemaGeneratedClass] = []
@@ -178,7 +178,8 @@ class Model:
         # Set asset ID and check for duplicates
         asset.id = asset_id or self.next_id
         if asset.id in self.asset_ids:
-            raise ValueError(f'Asset index {asset_id} already in use.')
+            msg = f'Asset index {asset_id} already in use.'
+            raise ValueError(msg)
         self.asset_ids.add(asset.id)
 
         self.next_id = max(asset.id + 1, self.next_id)
@@ -191,9 +192,12 @@ class Model:
             if allow_duplicate_names:
                 asset.name = asset.name + ':' + str(asset.id)
             else:
-                raise ValueError(
+                msg = (
                     f'Asset name {asset.name} is a duplicate'
                     ' and we do not allow duplicates.'
+                )
+                raise ValueError(
+                    msg
                 )
         self.asset_names.add(asset.name)
 
@@ -205,7 +209,7 @@ class Model:
         self.assets.append(asset)
 
     def remove_attacker(self, attacker: AttackerAttachment) -> None:
-        """Remove attacker"""
+        """Remove attacker."""
         self.attackers.remove(attacker)
 
     def remove_asset(self, asset: SchemaGeneratedClass) -> None:
@@ -219,9 +223,12 @@ class Model:
             'Remove "%s"(%d) from model "%s".', asset.name, asset.id, self.name
         )
         if asset not in self.assets:
-            raise LookupError(
+            msg = (
                 f'Asset "{asset.name}"({asset.id}) is not part'
                 f' of model"{self.name}".'
+            )
+            raise LookupError(
+                msg
             )
 
         # First remove all of the associations
@@ -255,12 +262,16 @@ class Model:
         )
 
         if asset not in self.assets:
-            raise LookupError(
+            msg = (
                 f'Asset "{asset.name}"({asset.id}) is not part of model '
                 f'"{self.name}".'
             )
+            raise LookupError(
+                msg
+            )
         if association not in self.associations:
-            raise LookupError(f'Association is not part of model "{self.name}".')
+            msg = f'Association is not part of model "{self.name}".'
+            raise LookupError(msg)
 
         left_field_name, right_field_name = self.get_association_field_names(
             association
@@ -279,9 +290,12 @@ class Model:
                 field.remove(asset)
 
         if not found:
-            raise LookupError(
+            msg = (
                 f'Asset "{asset.name}"({asset.id}) is not '
                 'part of the association provided.'
+            )
+            raise LookupError(
+                msg
             )
 
     def _validate_association(self, association: SchemaGeneratedClass) -> None:
@@ -298,8 +312,9 @@ class Model:
 
         # Check if identical association already exists
         if association in associations_same_type:
+            msg = f'Identical association {association_type} already exists'
             raise DuplicateModelAssociationError(
-                f'Identical association {association_type} already exists'
+                msg
             )
 
         # Check for duplicate assets in each field
@@ -312,9 +327,12 @@ class Model:
 
             unique_field_asset_names = {a.name for a in field_assets}
             if len(field_assets) > len(unique_field_asset_names):
-                raise ModelAssociationException(
+                msg = (
                     'More than one asset share same name in field'
                     f'{association_type}.{field_name}'
+                )
+                raise ModelAssociationException(
+                    msg
                 )
 
         # For each asset in left field, go through each assets in right field
@@ -327,9 +345,12 @@ class Model:
                 ):
                     # Assets already have the connection in another
                     # association with same type
-                    raise DuplicateModelAssociationError(
+                    msg = (
                         f'Association type {association_type} already exists'
                         f' between {left_asset.name} and {right_asset.name}'
+                    )
+                    raise DuplicateModelAssociationError(
+                        msg
                     )
 
     def add_association(self, association: SchemaGeneratedClass) -> None:
@@ -375,7 +396,8 @@ class Model:
 
         """
         if association not in self.associations:
-            raise LookupError(f'Association is not part of model "{self.name}".')
+            msg = f'Association is not part of model "{self.name}".'
+            raise LookupError(msg)
 
         left_field_name, right_field_name = self.get_association_field_names(
             association
@@ -473,8 +495,8 @@ class Model:
         association_type: str,
         left_asset: SchemaGeneratedClass,
         right_asset: SchemaGeneratedClass,
-    ):
-        """Return True if the association already exists between the assets"""
+    ) -> bool:
+        """Return True if the association already exists between the assets."""
         logger.debug(
             'Check to see if an association of type "%s" '
             'already exists between "%s" and "%s".',
@@ -698,7 +720,7 @@ class Model:
         return contents
 
     def save_to_file(self, filename: str) -> None:
-        """Save to json/yml depending on extension"""
+        """Save to json/yml depending on extension."""
         logger.debug('Save instance model to file "%s".', filename)
         return save_dict_to_file(filename, self._to_dict())
 
@@ -706,7 +728,7 @@ class Model:
     def _from_dict(
         cls, serialized_object: dict, lang_classes_factory: LanguageClassesFactory
     ) -> Model:
-        """Create a model from dict representation
+        """Create a model from dict representation.
 
         Arguments:
         serialized_object    - Model in dict format
@@ -714,9 +736,7 @@ class Model:
 
         """
         maltoolbox_version = (
-            serialized_object['metadata']['MAL Toolbox Version']
-            if 'MAL Toolbox Version' in serialized_object['metadata']
-            else __version__
+            serialized_object['metadata'].get('MAL Toolbox Version', __version__)
         )
         model = Model(
             serialized_object['metadata']['name'],
@@ -751,7 +771,7 @@ class Model:
 
         # Reconstruct the associations
         for assoc_entry in serialized_object.get('associations', []):
-            assoc = list(assoc_entry.keys())[0]
+            assoc = next(iter(assoc_entry.keys()))
             assoc_fields = assoc_entry[assoc]
             association = getattr(model.lang_classes_factory.ns, assoc)()
 
@@ -789,7 +809,7 @@ class Model:
     def load_from_file(
         cls, filename: str, lang_classes_factory: LanguageClassesFactory
     ) -> Model:
-        """Create from json or yaml file depending on file extension"""
+        """Create from json or yaml file depending on file extension."""
         logger.debug('Load instance model from file "%s".', filename)
         serialized_model = None
         if filename.endswith(('.yml', '.yaml')):
@@ -797,5 +817,6 @@ class Model:
         elif filename.endswith('.json'):
             serialized_model = load_dict_from_json_file(filename)
         else:
-            raise ValueError('Unknown file extension, expected json/yml/yaml')
+            msg = 'Unknown file extension, expected json/yml/yaml'
+            raise ValueError(msg)
         return cls._from_dict(serialized_model, lang_classes_factory)

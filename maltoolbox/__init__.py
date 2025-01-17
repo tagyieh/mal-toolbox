@@ -15,7 +15,7 @@
 #
 
 
-"""MAL-Toolbox Framework"""
+"""MAL-Toolbox Framework."""
 
 __title__ = 'maltoolbox'
 __version__ = '0.1.12'
@@ -43,10 +43,12 @@ config = configparser.ConfigParser()
 config.read(CONFIGFILE)
 
 if 'logging' not in config:
-    raise ValueError('Config file is missing essential information, cannot proceed.')
+    msg = 'Config file is missing essential information, cannot proceed.'
+    raise ValueError(msg)
 
 if 'log_file' not in config['logging']:
-    raise ValueError('Config file is missing a log_file location, cannot proceed.')
+    msg = 'Config file is missing a log_file location, cannot proceed.'
+    raise ValueError(msg)
 
 log_configs = {
     'log_file': config['logging']['log_file'],

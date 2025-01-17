@@ -1,4 +1,4 @@
-"""Utily functions for file handling"""
+"""Utily functions for file handling."""
 
 import json
 
@@ -38,17 +38,15 @@ def save_dict_to_yaml_file(filename: str, serialized_object: dict) -> None:
 
 
 def load_dict_from_yaml_file(filename: str) -> dict:
-    """Open json file and read as dict"""
+    """Open json file and read as dict."""
     with open(filename, encoding='utf-8') as file:
-        object_dict = yaml.safe_load(file)
-    return object_dict
+        return yaml.safe_load(file)
 
 
 def load_dict_from_json_file(filename: str) -> dict:
-    """Open yaml file and read as dict"""
+    """Open yaml file and read as dict."""
     with open(filename, encoding='utf-8') as file:
-        object_dict = json.loads(file.read())
-    return object_dict
+        return json.loads(file.read())
 
 
 def save_dict_to_file(filename: str, dictionary: dict) -> None:
@@ -65,4 +63,5 @@ def save_dict_to_file(filename: str, dictionary: dict) -> None:
     elif filename.endswith('.json'):
         save_dict_to_json_file(filename, dictionary)
     else:
-        raise ValueError('Unknown file extension, expected json/yml/yaml')
+        msg = 'Unknown file extension, expected json/yml/yaml'
+        raise ValueError(msg)

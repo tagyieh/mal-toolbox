@@ -1,12 +1,12 @@
-"""MAL-Toolbox securiCAD Translator Module"""
+"""MAL-Toolbox securiCAD Translator Module."""
 
 import json
 import logging
 import xml.etree.ElementTree as ET
 import zipfile
 
-from ..language import LanguageClassesFactory, LanguageGraph
-from ..model import AttackerAttachment, Model
+from maltoolbox.language import LanguageClassesFactory, LanguageGraph
+from maltoolbox.model import AttackerAttachment, Model
 
 logger = logging.getLogger(__name__)
 
@@ -132,10 +132,12 @@ def load_model_from_scad_archive(
         )
 
         if not lang_graph_assoc:
-            raise LookupError(
-                'Failed to find ("%s", "%s", "%s", "%s")'
+            msg = (
+                f'Failed to find ("{left_asset.type}", "{right_asset.type}", "{left_field}", "{right_field}")'
                 'association in lang specification.'
-                % (left_asset.type, right_asset.type, left_field, right_field)
+            )
+            raise LookupError(
+                msg
             )
             return None
 

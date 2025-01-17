@@ -1,4 +1,4 @@
-"""Contains wrappers combining more than one of the maltoolbox submodules"""
+"""Contains wrappers combining more than one of the maltoolbox submodules."""
 
 import logging
 import sys
@@ -20,7 +20,7 @@ def create_attack_graph(
     attach_attackers=True,
     calc_viability_and_necessity=True,
 ) -> AttackGraph:
-    """Create and return an attack graph
+    """Create and return an attack graph.
 
     Args:
     lang_file                       - path to language file (.mar or .mal)
@@ -46,7 +46,7 @@ def create_attack_graph(
     try:
         attack_graph = AttackGraph(lang_graph, instance_model)
     except AttackGraphStepExpressionError:
-        logger.error(
+        logger.exception(
             'Attack graph generation failed when attempting '
             'to resolve attack step expression!'
         )

@@ -1,12 +1,12 @@
-"""Unit tests for AttackGraphNode functionality"""
+"""Unit tests for AttackGraphNode functionality."""
 
 from maltoolbox.attackgraph.attacker import Attacker
 from maltoolbox.attackgraph.attackgraph import AttackGraph
 from maltoolbox.attackgraph.node import AttackGraphNode
 
 
-def test_attackgraphnode():
-    r"""Create a graph from nodes
+def test_attackgraphnode() -> None:
+    r"""Create a graph from nodes.
 
         node1
         /    \
