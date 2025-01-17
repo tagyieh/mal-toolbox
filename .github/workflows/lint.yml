@@ -22,8 +22,8 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install ruff
-          
+
       - name: Check Code with Ruff
         run: |
-          ruff check
+          ruff check --statistics
           ruff format --check
