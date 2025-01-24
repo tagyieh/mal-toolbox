@@ -18,7 +18,7 @@ def test_converts_from_0_1(corelang_lang_graph):
 
     assert old_model._to_dict() == new_model._to_dict()
 
-def test_converts_from_0_0_38(corelang_lang_graph):
+def test_converts_from_0_0(corelang_lang_graph):
     """Load the older_version_example_model.json from testdata, and check if
     its version is correct"""
 

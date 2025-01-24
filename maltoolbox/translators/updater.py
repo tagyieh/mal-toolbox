@@ -25,7 +25,7 @@ def load_model_from_older_version(
         )
 
     if version is None:
-        version = "0.0.38"  # Try it!
+        version = "0.0."  # Try it!
 
     match (version):
         case x if '0.1.' in x:
@@ -34,7 +34,7 @@ def load_model_from_older_version(
                 lang_classes_factory
             )
         case x if '0.0.' in x:
-            return load_model_from_version_0_0_39(
+            return load_model_from_version_0_0(
                 filename,
                 lang_classes_factory
             )
@@ -90,12 +90,12 @@ def load_from_yaml(
     return model_dict
 
 
-def load_model_from_version_0_0_39(
+def load_model_from_version_0_0(
         filename: str,
         lang_classes_factory: LanguageClassesFactory
     ) -> Model:
     """
-    Load model from file.
+    Load model from file from mal-toolbox 0.0.
 
     Arguments:
     filename                - the name of the input file
