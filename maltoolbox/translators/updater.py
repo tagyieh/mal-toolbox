@@ -117,11 +117,14 @@ def load_model_from_version_0_0(
                 else {'metaconcept': asset_object, 'name': f"{asset_object}:{asset_id}"}
             )
 
-            asset = (
-                model.lang_classes_factory.get_asset_class(
-                    asset_object['metaconcept']
-                )(name = asset_object['name'])
+            asset_class = model.lang_classes_factory.get_asset_class(
+                asset_object['metaconcept']
             )
+
+            if not asset_class:
+                raise LookupError(f"Could not find asset type {asset_object['metaconcept']}")
+
+            asset = asset_class(name = asset_object['name'])
             for defense in (defenses:=asset_object.get('defenses', [])):
                 setattr(asset, defense, float(defenses[defense]))
 
@@ -207,7 +210,7 @@ def load_model_from_version_0_1(
     # Reconstruct the associations dict in new format
     new_assoc_list = []
     for assoc_dict in model_dict.get('associations', []):
-        new_assoc_dict = {}
+        new_assoc_dict: dict[str, dict] = {}
 
         assert len(assoc_dict.keys()) == 1, (
             "Only one key per association in model file allowed"
@@ -225,7 +228,7 @@ def load_model_from_version_0_1(
     new_model_dict['associations'] = new_assoc_list
 
     # Reconstruct attackers dict for new format
-    new_attackers_dict = {}
+    new_attackers_dict: dict[int, dict] = {}
     attackers_dict: dict = model_dict.get('attackers', {})
     for attacker_id, attacker_dict in attackers_dict.items():
 
