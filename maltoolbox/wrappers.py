@@ -12,7 +12,6 @@ from maltoolbox.attackgraph.analyzers.apriori import (
 )
 from maltoolbox.exceptions import AttackGraphStepExpressionError
 from maltoolbox import log_configs
-from maltoolbox.translators.updater import load_model_from_older_version
 
 logger = logging.getLogger(__name__)
 
@@ -41,16 +40,9 @@ def create_attack_graph(
 
     lang_classes_factory = LanguageClassesFactory(lang_graph)
 
-    try:
-        instance_model = (
-            Model.load_from_file(model_file, lang_classes_factory)
-        )
-        logger.error("Your model file could not be parsed")
-    except Exception:
-        logger.info("Trying to parse your model file from older version")
-        instance_model = (
-            load_model_from_older_version(model_file, lang_classes_factory)
-        )
+    instance_model = (
+        Model.load_from_file(model_file, lang_classes_factory)
+    )
 
     if log_configs['model_file']:
         instance_model.save_to_file(log_configs['model_file'])
