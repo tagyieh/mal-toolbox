@@ -91,14 +91,10 @@ def upgrade_model(model_file: str, lang_file: str, output_file: str):
 
     lang_classes_factory = LanguageClassesFactory(lang_graph)
 
-    try:
-        model = load_model_from_older_version(
-            model_file, lang_classes_factory
-        )
-        model.save_to_file(output_file)
-    except Exception:
-        logger.error("Could not convert your model file")
-        raise
+    model = load_model_from_older_version(
+        model_file, lang_classes_factory
+    )
+    model.save_to_file(output_file)
 
 
 def main():
