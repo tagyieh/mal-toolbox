@@ -190,7 +190,7 @@ def load_model_from_version_0_1(
     Load model from file.
 
     Arguments:
-    filename                - the name of the input file
+    filename                - the name of the input file (json/yml)
     lang_classes_factory    - the language classes factory that defines the
                               classes needed to build the model
     """
@@ -200,12 +200,14 @@ def load_model_from_version_0_1(
 
     # Meta data and assets format did not change from version 0.1
     new_model_dict['metadata'] = model_dict['metadata']
-    new_model_dict['assets'] = model_dict['assets']
 
-    # Remember asset ids for attackers dict construction later
-    asset_id_to_name = {}
-    for asset_id, asset_info in new_model_dict['assets'].items():
-        asset_id_to_name[asset_id] = asset_info['name']
+    new_assets_dict = {}
+    for asset_id, asset_info in model_dict['assets'].items():
+        # Make sure asset ids are ints for json compatibility
+        asset_id = int(asset_id)
+        new_assets_dict[asset_id] = asset_info
+
+    new_model_dict['assets'] = new_assets_dict
 
     # Reconstruct the associations dict in new format
     new_assoc_list = []
@@ -231,14 +233,15 @@ def load_model_from_version_0_1(
     new_attackers_dict: dict[int, dict] = {}
     attackers_dict: dict = model_dict.get('attackers', {})
     for attacker_id, attacker_dict in attackers_dict.items():
-
+        attacker_id = int(attacker_id) # JSON compatibility
         new_attackers_dict[attacker_id] = {}
         new_attackers_dict[attacker_id]['name'] = attacker_dict['name']
         new_entry_points_dict = {}
 
         entry_points_dict = attacker_dict['entry_points']
         for asset_id, attack_steps in entry_points_dict.items():
-                asset_name = asset_id_to_name[asset_id]
+                asset_id = int(asset_id) # JSON compatibility
+                asset_name = new_assets_dict[asset_id]['name']
                 new_entry_points_dict[asset_name] = {
                     'asset_id': asset_id,
                     'attack_steps': attack_steps['attack_steps']
