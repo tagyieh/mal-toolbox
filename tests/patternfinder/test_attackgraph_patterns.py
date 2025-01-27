@@ -73,19 +73,19 @@ def test_attackgraph_find_multiple():
                     /
                  Node7
     """
-    attack_graph = AttackGraph()
+    attack_graph = AttackGraph(None)
 
     # Create the graph
-    node1 = AttackGraphNode("and", "Node1", {})
-    node2 = AttackGraphNode("and", "Node2", {}, parents=[node1])
-    node3 = AttackGraphNode("and", "Node3", {}, parents=[node1])
+    node1 = AttackGraphNode("and", None, "Node1", {})
+    node2 = AttackGraphNode("and", None, "Node2", {}, parents=[node1])
+    node3 = AttackGraphNode("and", None, "Node3", {}, parents=[node1])
     node1.children = [node2, node3]
-    node4 = AttackGraphNode("and", "Node4", {}, parents=[node2])
+    node4 = AttackGraphNode("and", None, "Node4", {}, parents=[node2])
     node2.children = [node4]
-    node5 = AttackGraphNode("and", "Node5", {}, parents=[node3])
-    node6 = AttackGraphNode("and", "Node6", {}, parents=[node3])
+    node5 = AttackGraphNode("and", None, "Node5", {}, parents=[node3])
+    node6 = AttackGraphNode("and", None, "Node6", {}, parents=[node3])
     node3.children = [node5, node6]
-    node7 = AttackGraphNode("and", "Node7", {}, parents=[node4])
+    node7 = AttackGraphNode("and", None, "Node7", {}, parents=[node4])
     node4.children = [node7]
     attack_graph.nodes = [node1, node2, node3, node4, node5, node6, node7]
     
@@ -123,20 +123,20 @@ def test_attackgraph_find_multiple_same_subpath():
                        /             \
                    Node4             Node5
     """
-    attack_graph = AttackGraph()
+    attack_graph = AttackGraph(None)
 
     # Create the graph
-    node1 = AttackGraphNode("and", "Node1", {})
+    node1 = AttackGraphNode("and", None, "Node1", {})
     node2 = AttackGraphNode(
-        "and", "Node2", {}, parents=[node1])
+        "and", None, "Node2", {}, parents=[node1])
     node3 = AttackGraphNode(
-        "and", "Node3", {}, parents=[node1])
+        "and", None, "Node3", {}, parents=[node1])
     node1.children = [node2, node3]
     node4 = AttackGraphNode(
-        "and", "Node4", {}, parents=[node2])
+        "and", None, "Node4", {}, parents=[node2])
     node2.children = [node4]
     node5 = AttackGraphNode(
-        "and", "Node5", {}, parents=[node3])
+        "and", None, "Node5", {}, parents=[node3])
     node3.children = [node5]
     attack_graph.nodes = [node1, node2, node3, node4, node5]
 
@@ -175,18 +175,18 @@ def test_attackgraph_two_same_start_end_node():
                           \        /
                              Node4
     """
-    attack_graph = AttackGraph()
+    attack_graph = AttackGraph(None)
 
     # Create the graph
-    node1 = AttackGraphNode("and", "Node1", {})
+    node1 = AttackGraphNode("and", None, "Node1", {})
     assert node1.name == "Node1"
     node2 = AttackGraphNode(
-        "and", "Node2", {}, parents=[node1])
+        "and", None, "Node2", {}, parents=[node1])
     node3 = AttackGraphNode(
-        "and", "Node3", {}, parents=[node1])
+        "and", None, "Node3", {}, parents=[node1])
     node1.children = [node2, node3]
     node4 = AttackGraphNode(
-        "and", "Node4", {}, parents=[node2, node3])
+        "and", None, "Node4", {}, parents=[node2, node3])
     node2.children = [node4]
     node3.children = [node4]
 
